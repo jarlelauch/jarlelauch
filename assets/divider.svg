@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 64" role="img" aria-label="Section divider">
+  <defs>
+    <filter id="dg" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style><![CDATA[
+    .march { stroke-dasharray: 22 12; animation: march 6s linear infinite; }
+    @keyframes march { to { stroke-dashoffset: -340; } }
+    .glyph { animation: breathe 4.6s ease-in-out infinite; transform-origin: 600px 32px; }
+    @keyframes breathe { 0%,100% { opacity: .55; transform: scale(.9); } 50% { opacity: 1; transform: scale(1.1); } }
+    .sat { animation: orbits 3.4s linear infinite; transform-origin: 600px 32px; }
+    .sat.s2 { animation-duration: 5.4s; animation-direction: reverse; }
+    @keyframes orbits { to { transform: rotate(360deg); } }
+    .tick { animation: blink 3.6s steps(2, end) infinite; }
+    .tick.t2 { animation-delay: -1.2s; } .tick.t3 { animation-delay: -2.4s; }
+    @keyframes blink { 50% { opacity: .12; } }
+  ]]></style>
+
+  <path d="M44 32H520" class="march" fill="none" stroke="#e8b95c" stroke-opacity=".5" stroke-width="1"/>
+  <path d="M1156 32H680" class="march" fill="none" stroke="#e8b95c" stroke-opacity=".5" stroke-width="1"/>
+  <path d="M520 32H680" fill="none" stroke="#e8b95c" stroke-opacity=".14" stroke-width="1"/>
+  <rect x="42" y="30" width="4" height="4" fill="#e8b95c" opacity=".7"/>
+  <rect x="1154" y="30" width="4" height="4" fill="#e8b95c" opacity=".7"/>
+
+  <path d="M180 28v8" class="tick" stroke="#e7d5ae" stroke-opacity=".3" stroke-width="1"/>
+  <path d="M420 28v8" class="tick t2" stroke="#e7d5ae" stroke-opacity=".3" stroke-width="1"/>
+  <path d="M780 28v8" class="tick t3" stroke="#e7d5ae" stroke-opacity=".3" stroke-width="1"/>
+  <path d="M1020 28v8" class="tick t2" stroke="#e7d5ae" stroke-opacity=".3" stroke-width="1"/>
+
+  <g filter="url(#dg)">
+    <text x="600" y="42" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="28" fill="#e8b95c" class="glyph">∮</text>
+  </g>
+  <g class="sat"><circle cx="617" cy="32" r="1.8" fill="#f0c070" filter="url(#dg)"/></g>
+  <g class="sat s2"><circle cx="583" cy="32" r="1.4" fill="#c0487e"/></g>
+</svg>

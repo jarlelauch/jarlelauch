@@ -81,6 +81,16 @@
       @keyframes pull-d { 0%{transform:translate(78px,-84px) scale(1);opacity:0} 19%{opacity:.9} 76%{opacity:.7} 100%{transform:translate(-78px,146px) scale(.05);opacity:0} }
       @keyframes shatter { 0%,24%{opacity:0;transform:rotate(0) scale(.06)} 38%{opacity:1} 100%{opacity:0;transform:rotate(270deg) scale(1.78)} }
       @keyframes snake { to { stroke-dashoffset:-432; } }
+      .dot3 { animation: orbit 1.9s linear infinite; animation-delay:-.6s; }
+      .dot4 { animation: orbit .86s linear infinite; animation-delay:-.3s; }
+      .prec { transform-origin: 600px 215px; animation: precess 31s linear infinite; }
+      .ledger { font-size:8px; fill:#d8c8ef; animation: drizzle 11s linear infinite; }
+      .ledger.l1 { animation-delay:-2.2s } .ledger.l2 { animation-delay:-4.4s } .ledger.l3 { animation-delay:-6.6s } .ledger.l4 { animation-delay:-8.8s }
+      @keyframes precess { to { transform: rotate(-360deg); } }
+      @keyframes drizzle { 0% { transform: translateY(0); opacity:.05 } 14% { opacity:.55 } 100% { transform: translateY(26px); opacity:.03 } }
+      @media (prefers-reduced-motion: reduce) {
+        .ring,.acc,.horizon,.dot,.dot2,.dot3,.dot4,.glow-a,.glow-b,.glow-c,.glow-d,.shat,.tail,.star,.glyph,.ledger,.prec { animation: none !important; }
+      }
     ]]></style>
   </defs>
 
@@ -104,6 +114,7 @@
     <ellipse cx="600" cy="215" rx="290" ry="88" stroke="#9d3a5d" stroke-width=".7" stroke-dasharray="2 20"/>
   </g>
   <ellipse class="ring r4" cx="600" cy="215" rx="452" ry="132" fill="none" stroke="#b35f6c" stroke-width=".8" stroke-dasharray="4 22" opacity=".4"/>
+  <ellipse class="prec" cx="600" cy="215" rx="276" ry="184" fill="none" stroke="#8a4f8f" stroke-width=".6" stroke-dasharray="1 9" opacity=".3"/>
 
   <g class="acc" fill="none">
     <ellipse cx="600" cy="215" rx="176" ry="63" stroke="url(#gld)" stroke-width="6" stroke-linecap="round" stroke-dasharray="110 58 10 24" filter="url(#glow)" opacity=".9"/>
@@ -142,6 +153,8 @@
     <circle class="dot" cx="136" cy="0" r="2.4" fill="#ffd894" filter="url(#glow)"/>
     <circle class="dot2" cx="-122" cy="0" r="1.8" fill="#d86bbd" filter="url(#glow)"/>
     <circle class="dot" cx="0" cy="-96" r="1.5" fill="#f7b95c" opacity=".9"/>
+    <circle class="dot3" cx="-84" cy="0" r="1.7" fill="#f9c668" filter="url(#glow)"/>
+    <circle class="dot4" cx="0" cy="112" r="1.2" fill="#c75fa0" filter="url(#glow)"/>
     <circle r="96" fill="url(#core)" filter="url(#warp)"/>
     <circle r="71" fill="#000109"/>
     <circle r="50" fill="#000"/>
@@ -156,6 +169,10 @@
     <path d="M44 42h90m-90 0v18m90-18v18M1066 388h90m-90 0v-18m90 18v-18"/>
     <path d="M44 384v-35m0 35h35M1156 46v35m0-35h-35"/>
   </g>
+  <g class="ledger"><text x="18" y="410">∂</text><text x="52" y="408">∫</text><text x="86" y="412">φ</text><text x="120" y="409">Σ</text><text x="162" y="413">∞</text><text x="202" y="407">π</text><text x="240" y="412">√</text><text x="282" y="408">∏</text></g>
+  <g class="ledger l1"><text x="330" y="410">λ</text><text x="372" y="408">Δ</text><text x="414" y="412">γ</text><text x="456" y="409">∃</text><text x="498" y="413">≠</text><text x="540" y="407">⊗</text></g>
+  <g class="ledger l2"><text x="596" y="410">0</text><text x="632" y="408">1</text><text x="672" y="412">e</text><text x="710" y="409">i</text><text x="752" y="413">π</text><text x="790" y="407">y</text></g>
+  <g class="ledger l3"><text x="844" y="410">∂</text><text x="884" y="408">∫</text><text x="926" y="412">φ</text><text x="968" y="409">Σ</text><text x="1010" y="413">∞</text><text x="1050" y="407">π</text><text x="1090" y="412">√</text><text x="1130" y="408">∏</text></g>
   <g class="caption" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#e3d2a6" letter-spacing="4">
     <text x="62" y="63">SINGULARITY / 00.000</text>
     <text x="941" y="384">EVENT HORIZON / ∆t</text>

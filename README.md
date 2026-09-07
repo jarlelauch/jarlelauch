@@ -1,7 +1,7 @@
 <!--
-  PROFILE README · BLACK-HOLE MATHEMATICS · OBSIDIAN ENGINE v2
+  PROFILE README · BLACK-HOLE MATHEMATICS · OBSIDIAN ENGINE v3
   Profile repository for jarlelauch.
-  Live badges, field-readings chart (auto-refreshed daily via GitHub Actions), and animated banner.
+  Live badges, field-readings + language spectra charts (auto-refreshed daily via GitHub Actions), and animated banner.
 -->
 
 <p align="center">
@@ -17,9 +17,11 @@
   ·
   <a href="#readings">▤ READINGS</a>
   ·
+  <a href="#spectra">≡ SPECTRA</a>
+  ·
   <a href="#constellation">✦ CONSTELLATION</a>
   ·
-  <a href="#notes">✎ NOTES</a>
+  <a href="#mathematical-notes">✎ NOTES</a>
   ·
   <a href="#archive">△ ARCHIVE</a>
   ·
@@ -65,6 +67,18 @@ I build deliberate software: systems that stay clear under pressure, beautiful i
 
 </details>
 
+<details>
+<summary><b>∑ Theorems in force</b></summary>
+<br />
+
+- **Euler** — *e^(iπ) + 1 = 0* · the singularity of identity.
+- **Cantor** — some infinities are strictly larger · hierarchy is structure.
+- **Shannon** — a channel that transmits perfectly has already forgotten itself.
+- **Gödel** — every useful system contains a truth it cannot prove.
+- **Noether** — symmetry is where the conserved quantities hide.
+
+</details>
+
 ## Readings
 
 <p align="center">
@@ -77,6 +91,20 @@ I build deliberate software: systems that stay clear under pressure, beautiful i
 
 <p align="center">
   <sub>▤ Public signal, last 14 days · re-rendered nightly by GitHub Actions</sub>
+</p>
+
+## Spectra
+
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/jarlelauch/jarlelauch/main/assets/top-langs.svg"
+    alt="Language spectra: source mass per language across public repositories, refreshed daily."
+    width="100%"
+  />
+</p>
+
+<p align="center">
+  <sub>≡ Source mass by language · refreshed nightly, no keys required</sub>
 </p>
 
 ## Mathematical Notes

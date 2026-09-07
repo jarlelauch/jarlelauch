@@ -26,6 +26,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/metrics.svg
+          git add assets/metrics.svg assets/top-langs.svg
           git diff --cached --quiet || git commit -q -m "chore: refresh field readings [skip ci]"
           git push -q origin main

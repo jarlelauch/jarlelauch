@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 180" role="img" aria-labelledby="mt md">
+  <title id="mt">Laws — selected theorems of the void</title>
+  <desc id="md">Five classical theorems displayed as a minimalist mathematical strip with a scanning light and staggered fade.</desc>
+  <defs>
+    <linearGradient id="sw" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e8b95c" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#e8b95c" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#e8b95c" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07070e"/><stop offset=".55" stop-color="#0d0a16"/><stop offset="1" stop-color="#06060b"/>
+    </linearGradient>
+  </defs>
+  <style><![CDATA[
+    .law { animation: lawfade 8s ease-in-out infinite; }
+    .c2 { animation-delay: -1.6s; } .c3 { animation-delay: -3.2s; } .c4 { animation-delay: -4.8s; } .c5 { animation-delay: -6.4s; }
+    @keyframes lawfade { 0%,100% { opacity: .28; } 45% { opacity: 1; } }
+    .sweep { animation: sweep 7s linear infinite; }
+    @keyframes sweep { from { transform: translateX(-120px); } to { transform: translateX(1320px); } }
+  ]]></style>
+
+  <rect width="1200" height="180" rx="14" fill="url(#bg)"/>
+  <text x="30" y="26" font-family="Georgia, serif" font-size="13" letter-spacing="4" fill="#e8b95c">LAWS / 001 — 005</text>
+  <text x="1170" y="26" text-anchor="end" font-family="Georgia, serif" font-size="9" letter-spacing="3" fill="#c0487e" opacity=".85">SELECTED THEOREMS OF THE VOID</text>
+
+  <path d="M240 58V152M480 58V152M720 58V152M960 58V152" stroke="#e7d5ae" stroke-opacity=".1" stroke-width="1"/>
+
+  <g class="law c1" font-family="Georgia, 'Times New Roman', serif" fill="#e7d5ae" text-anchor="middle">
+    <text x="120" y="80" font-size="10" letter-spacing="3" fill="#c0487e">001</text>
+    <text x="120" y="126" font-size="21">e<tspan dy="-9" font-size="13">iπ</tspan><tspan dy="9"> + 1 = 0</tspan></text>
+    <text x="120" y="152" font-size="8.5" letter-spacing="2.5" fill="#e7d5ae" opacity=".55">UNITY OF FIVE CONSTANTS</text>
+  </g>
+  <g class="law c2" font-family="Georgia, 'Times New Roman', serif" fill="#e7d5ae" text-anchor="middle">
+    <text x="360" y="80" font-size="10" letter-spacing="3" fill="#c0487e">002</text>
+    <text x="360" y="126" font-size="21">∮ E·dℓ = −dΦ<tspan dy="5" font-size="12">B</tspan><tspan dy="-5">/dt</tspan></text>
+    <text x="360" y="152" font-size="8.5" letter-spacing="2.5" fill="#e7d5ae" opacity=".55">GEOMETRY OF FIELDS</text>
+  </g>
+  <g class="law c3" font-family="Georgia, 'Times New Roman', serif" fill="#e7d5ae" text-anchor="middle">
+    <text x="600" y="80" font-size="10" letter-spacing="3" fill="#c0487e">003</text>
+    <text x="600" y="126" font-size="21">S = k · log W</text>
+    <text x="600" y="152" font-size="8.5" letter-spacing="2.5" fill="#e7d5ae" opacity=".55">INFORMATION IS PHYSICAL</text>
+  </g>
+  <g class="law c4" font-family="Georgia, 'Times New Roman', serif" fill="#e7d5ae" text-anchor="middle">
+    <text x="840" y="80" font-size="10" letter-spacing="3" fill="#c0487e">004</text>
+    <text x="840" y="126" font-size="21">φ = (1 + √5) / 2</text>
+    <text x="840" y="152" font-size="8.5" letter-spacing="2.5" fill="#e7d5ae" opacity=".55">PROPORTION PRECEDES FORM</text>
+  </g>
+  <g class="law c5" font-family="Georgia, 'Times New Roman', serif" fill="#e7d5ae" text-anchor="middle">
+    <text x="1080" y="80" font-size="10" letter-spacing="3" fill="#c0487e">005</text>
+    <text x="1080" y="126" font-size="21">G<tspan dy="5" font-size="12">μν</tspan><tspan dy="-5"> = 8π T</tspan><tspan dy="5" font-size="12">μν</tspan></text>
+    <text x="1080" y="152" font-size="8.5" letter-spacing="2.5" fill="#e7d5ae" opacity=".55">MATTER BENDS THE VOID</text>
+  </g>
+
+  <rect x="-120" y="0" width="120" height="180" fill="url(#sw)" class="sweep"/>
+</svg>
