@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" role="img" aria-labelledby="st sd">
+  <title id="st">Peta langit — tiga rasi matematis</title>
+  <desc id="sd">Langit malam dengan tiga rasi buatan yang membentuk simbol phi, sigma, dan integral, lengkap dengan bintang berkelap-kelip dan garis rasi beranimasi.</desc>
+  <defs>
+    <pattern id="sdot" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="14" cy="14" r=".7" fill="#e7d5ae" opacity=".06"/>
+    </pattern>
+    <filter id="sglow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="2.6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style><![CDATA[
+    .tw { animation: twinkle 2.8s ease-in-out infinite alternate; }
+    .tw.b { animation-delay: -.9s; } .tw.c { animation-delay: -1.7s; } .tw.d { animation-delay: -2.3s; }
+    @keyframes twinkle { from { opacity: .2; } to { opacity: 1; } }
+    .line { stroke-dasharray: 3 7; animation: clinedash 16s linear infinite; }
+    .line.f { animation-duration: 22s; animation-direction: reverse; }
+    @keyframes clinedash { to { stroke-dashoffset: -400; } }
+    .gstar { filter: url(#sglow); }
+  ]]></style>
+
+  <rect width="1200" height="300" rx="14" fill="#06060b"/>
+  <rect width="1200" height="300" rx="14" fill="url(#sdot)"/>
+
+  <g fill="#f1d9a0">
+    <circle class="tw" cx="70" cy="50" r="1"/><circle class="tw b" cx="150" cy="250" r=".8"/><circle class="tw c" cx="240" cy="40" r="1.1"/>
+    <circle class="tw d" cx="330" cy="262" r=".9"/><circle class="tw b" cx="430" cy="60" r="1"/><circle class="tw" cx="470" cy="240" r=".8"/>
+    <circle class="tw c" cx="760" cy="46" r="1.1"/><circle class="tw d" cx="800" cy="256" r=".9"/><circle class="tw" cx="880" cy="70" r=".8"/>
+    <circle class="tw b" cx="980" cy="42" r="1"/><circle class="tw c" cx="1040" cy="260" r="1.1"/><circle class="tw d" cx="1130" cy="120" r=".9"/>
+    <circle class="tw" cx="60" cy="180" r=".8"/><circle class="tw b" cx="560" cy="30" r=".9"/><circle class="tw c" cx="700" cy="130" r=".7"/>
+    <circle class="tw d" cx="905" cy="240" r=".7"/><circle class="tw" cx="1150" cy="220" r=".8"/><circle class="tw b" cx="390" cy="150" r=".7"/>
+  </g>
+
+  <!-- Rasi Phi -->
+  <g class="line" fill="none" stroke="#e8b95c" stroke-opacity=".4" stroke-width="1">
+    <path d="M265 70V230M265 100L293 135L265 170L237 135Z"/>
+  </g>
+  <g fill="#f0dcb2">
+    <circle class="gstar tw" cx="265" cy="70" r="3"/><circle class="gstar tw b" cx="265" cy="230" r="2.4"/>
+    <circle class="gstar tw c" cx="293" cy="135" r="2.6"/><circle class="gstar tw d" cx="237" cy="135" r="2.2"/>
+    <circle class="tw" cx="265" cy="100" r="1.6"/><circle class="tw b" cx="265" cy="170" r="1.6"/>
+  </g>
+
+  <!-- Rasi Sigma -->
+  <g class="line f" fill="none" stroke="#c0487e" stroke-opacity=".42" stroke-width="1">
+    <path d="M560 80H665L575 148L665 216H560"/>
+  </g>
+  <g fill="#f0dcb2">
+    <circle class="gstar tw b" cx="560" cy="80" r="2.8"/><circle class="gstar tw" cx="665" cy="80" r="2.4"/>
+    <circle class="gstar tw d" cx="575" cy="148" r="3.1"/><circle class="gstar tw c" cx="665" cy="216" r="2.4"/>
+    <circle class="gstar tw b" cx="560" cy="216" r="2.8"/>
+  </g>
+
+  <!-- Rasi Integral -->
+  <g class="line" fill="none" stroke="#e8b95c" stroke-opacity=".4" stroke-width="1">
+    <path d="M952 75C920 95 920 120 952 138C984 156 984 182 948 205"/>
+  </g>
+  <g fill="#f0dcb2">
+    <circle class="gstar tw c" cx="952" cy="75" r="2.9"/><circle class="gstar tw" cx="927" cy="108" r="2.2"/>
+    <circle class="gstar tw d" cx="952" cy="138" r="2.6"/><circle class="gstar tw b" cx="968" cy="172" r="2.2"/>
+    <circle class="gstar tw c" cx="948" cy="205" r="2.9"/>
+  </g>
+
+  <g font-family="Georgia, serif" font-size="9" letter-spacing="3" fill="#e7d5ae" opacity=".65" text-anchor="middle">
+    <text x="265" y="262">Φ · RASI EMAS</text>
+    <text x="612" y="252">Σ · RASI JUMLAH</text>
+    <text x="952" y="252">∫ · RASI ALIRAN</text>
+  </g>
+
+  <text x="36" y="30" font-family="Georgia, serif" font-size="9" letter-spacing="3" fill="#e7d5ae" opacity=".5">PETA LANGIT / 03 RASI MATEMATIS</text>
+  <text x="1164" y="30" text-anchor="end" font-family="Georgia, serif" font-size="9" letter-spacing="3" fill="#c0487e" opacity=".8">DEKLINASI +00°00'</text>
+  <text x="600" y="286" text-anchor="middle" font-family="Georgia, serif" font-size="8.5" letter-spacing="3" fill="#e7d5ae" opacity=".45">BINTANG YANG SAMA DIBACA BERBEDA OLEH SETIAP MATA</text>
+</svg>

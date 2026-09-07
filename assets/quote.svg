@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 220" role="img" aria-labelledby="qt qd">
+  <title id="qt">Petinggalan — tiga kalimat</title>
+  <desc id="qd">Tiga kutipan tentang matematika dan kerajinan berganti perlahan, satu per satu, dengan tanda kutip dekoratif.</desc>
+  <defs>
+    <linearGradient id="qacc" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e8b95c" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#e8b95c" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#c0487e" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="qglow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style><![CDATA[
+    .qfade { opacity: 0; animation: qshow 18s ease-in-out infinite; }
+    .q2 { animation-delay: -6s; }
+    .q3 { animation-delay: -12s; }
+    @keyframes qshow { 0% { opacity: 0; } 5% { opacity: 1; } 28% { opacity: 1; } 33.3% { opacity: 0; } 100% { opacity: 0; } }
+    .mark { animation: breathe 18s ease-in-out infinite; }
+    @keyframes breathe { 0%,100% { opacity: .1; } 50% { opacity: .22; } }
+    .march { stroke-dasharray: 30 18; animation: qmarch 12s linear infinite; }
+    @keyframes qmarch { to { stroke-dashoffset: -480; } }
+  ]]></style>
+
+  <rect width="1200" height="220" rx="14" fill="#07070e"/>
+  <path d="M60 172H1140" class="march" fill="none" stroke="url(#qacc)" stroke-width="1" opacity=".55"/>
+
+  <text x="70" y="112" font-family="Georgia, 'Times New Roman', serif" font-size="120" fill="#e8b95c" class="mark">“</text>
+  <text x="1130" y="106" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="120" fill="#e8b95c" class="mark">”</text>
+
+  <g class="qfade q1">
+    <text x="600" y="98" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="23" fill="#e8b95c" filter="url(#qglow)">ALAM INI DITULIS DALAM BAHASA MATEMATIKA</text>
+    <text x="600" y="132" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" letter-spacing="4" fill="#c0487e">GALILEO GALILEI · 1623</text>
+  </g>
+  <g class="qfade q2">
+    <text x="600" y="98" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="23" fill="#e8b95c" filter="url(#qglow)">APA YANG TIDAK DAPAT DIBUAT, TIDAK DAPAT DIPAHAMI</text>
+    <text x="600" y="132" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" letter-spacing="4" fill="#c0487e">RICHARD FEYNMAN</text>
+  </g>
+  <g class="qfade q3">
+    <text x="600" y="98" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="23" fill="#e8b95c" filter="url(#qglow)">SETIAP PERSOALAN PUNYA GEOMETRI. TEMUKAN BENTUKNYA DULU.</text>
+    <text x="600" y="132" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" letter-spacing="4" fill="#c0487e">CATATAN LAPANGAN · J S'GENT</text>
+  </g>
+
+  <text x="36" y="30" font-family="Georgia, serif" font-size="9" letter-spacing="3" fill="#e7d5ae" opacity=".5">PETINGGALAN / TIGA KALIMAT</text>
+  <text x="1164" y="30" text-anchor="end" font-family="Georgia, serif" font-size="9" letter-spacing="3" fill="#c0487e" opacity=".8">SATU SIKLUS · 18 DETIK</text>
+  <text x="600" y="200" text-anchor="middle" font-family="Georgia, serif" font-size="8.5" letter-spacing="3" fill="#e7d5ae" opacity=".45">KALIMAT YANG SAMA SELALU BERNADA BEDA DI TIAP ORBIT</text>
+</svg>
