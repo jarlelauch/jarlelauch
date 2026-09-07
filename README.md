@@ -253,6 +253,18 @@ e^{i\pi} + 1 = 0
 </p>
 
 <p align="center">
+  <img
+    src="https://raw.githubusercontent.com/jarlelauch/jarlelauch/main/assets/quote.svg"
+    alt="Piringan kutipan: tiga kalimat tentang matematika berganti perlahan."
+    width="100%"
+  />
+</p>
+
+<p align="center">
+  <sub>❝ Kalimat yang kupercaya, diputar tanpa henti.</sub>
+</p>
+
+<p align="center">
   <img src="https://raw.githubusercontent.com/jarlelauch/jarlelauch/main/assets/divider.svg" alt="" width="100%" />
 </p>
 
