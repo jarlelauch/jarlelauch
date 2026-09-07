@@ -160,13 +160,17 @@ hover the glyphs; each flares in gold or magenta when touched.
 <p align="center">
   <img
     src="https://raw.githubusercontent.com/jarlelauch/jarlelauch/main/assets/naga.svg"
-    alt="Naga matematika minimalis: berenang, duri berdenyut, kumis berayun, rumus memancar dari ekor."
+    alt="Naga api: duri tajam berdenyut, taring menyala, api dari mulut, rumus memancar dari ekor."
     width="100%"
   />
 </p>
 
 <p align="center">
-  <sub>◄ Gerakkan kursor · naga mengikuti · ekor menuliskan rumus tanpa henti.</sub>
+  <sub>◄ Duri tajam berdenyut · taring menyala · api dari mulut · rumus memancar dari ekor.</sub>
+</p>
+
+<p align="center">
+  <a href="https://jarlelauch.github.io/jarlelauch/naga.html">◈ GERAKKAN NAGA DENGAN KURSOR &#8594; versi interaktif</a>
 </p>
 
 ---
