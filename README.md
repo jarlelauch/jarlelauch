@@ -157,21 +157,7 @@ hover the glyphs; each flares in gold or magenta when touched.
   <sub>◄ Delapan belas periode · satu pola yang tidak pernah sama.</sub>
 </p>
 
-<p align="center">
-  <img
-    src="https://raw.githubusercontent.com/jarlelauch/jarlelauch/main/assets/naga.svg"
-    alt="Naga api: duri tajam berdenyut, taring menyala, api dari mulut, rumus memancar dari ekor."
-    width="100%"
-  />
-</p>
 
-<p align="center">
-  <sub>◄ Duri tajam berdenyut · taring menyala · api dari mulut · rumus memancar dari ekor.</sub>
-</p>
-
-<p align="center">
-  <a href="https://jarlelauch.github.io/jarlelauch/naga.html">◈ GERAKKAN NAGA DENGAN KURSOR &#8594; versi interaktif — bakar planet, kumpulkan skor, sesekali meteor</a>
-</p>
 
 ---
 
