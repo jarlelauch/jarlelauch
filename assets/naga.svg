@@ -1,168 +1,168 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" role="img" aria-labelledby="dr drd">
-  <title id="dr">Naga matematika — gerakkan kursor</title>
-  <desc id="drd">Naga minimalis yang mengikuti kursor; dari ekornya muncul rumus dan angka acak. Buka langsung di peramban untuk interaksi penuh.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-labelledby="nt nd">
+  <title id="nt">Naga bilangan — naga matematika</title>
+  <desc id="nd">Naga minimalis berwarna emas dan magenta berenang; duri punggung berdenyut, kumis berayun, dan rumus serta angka memancar naik dari ekor. Buka langsung di peramban untuk mengarahkan naga dengan kursor.</desc>
   <defs>
-    <linearGradient id="dg" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#e8b95c"/>
+    <linearGradient id="bodyG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f2dfad"/>
       <stop offset=".5" stop-color="#d3932c"/>
       <stop offset="1" stop-color="#c0487e"/>
     </linearGradient>
-    <radialGradient id="dh" cx="50%" cy="50%" r="50%">
-      <stop offset="0" stop-color="#ffe3a0"/><stop offset="1" stop-color="#e8b95c" stop-opacity="0"/>
+    <linearGradient id="finG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e8b95c" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#c0487e" stop-opacity=".3"/>
+    </linearGradient>
+    <radialGradient id="eyeG" cx="45%" cy="40%" r="60%">
+      <stop offset="0" stop-color="#fff6d8"/>
+      <stop offset=".55" stop-color="#ffe3a0"/>
+      <stop offset="1" stop-color="#e8b95c"/>
     </radialGradient>
-    <filter id="dgl" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="2.4" result="b"/>
+    <filter id="nglow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <style><![CDATA[
-      .seg { transition: none; }
-      .num { font-family: Georgia,'Times New Roman',serif; font-size: 13px; fill: #f0dcb2; opacity: 0; animation: float 3s ease-out infinite; }
-      .n2 { animation-delay: -0.6s; } .n3 { animation-delay: -1.2s; } .n4 { animation-delay: -1.8s; } .n5 { animation-delay: -2.4s; }
-      @keyframes float { 0% { opacity: 0; transform: translate(0,0) scale(.6);} 15%{opacity:.95} 80%{opacity:.7} 100%{opacity:0; transform: translate(0,-60px) scale(1.1);} }
-      .body-undulate { animation: undulate 4s ease-in-out infinite; transform-origin: center; }
-      @keyframes undulate { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
-    ]]></style>
   </defs>
-
-  <rect width="1200" height="430" rx="14" fill="#07070e"/>
-  <g stroke="#d8c595" stroke-opacity=".05" stroke-width="1">
-    <path d="M0 70H1200M0 140H1200M0 210H1200M0 280H1200M0 350H1200"/>
-    <path d="M100 0V430M220 0V430M340 0V430M460 0V430M580 0V430M700 0V430M820 0V430M940 0V430M1060 0V430"/>
+  <style><![CDATA[
+    .swim{animation:swim 10s ease-in-out infinite;transform-origin:600px 250px}
+    @keyframes swim{0%,100%{transform:translate(0,0) rotate(0)}25%{transform:translate(-12px,-16px) rotate(-1.1deg)}50%{transform:translate(4px,-6px) rotate(.7deg)}75%{transform:translate(-2px,12px) rotate(.5deg)}}
+    .seg{animation:wave 2.2s ease-in-out infinite}
+    .s1{animation-delay:-.05s}.s2{animation-delay:-.10s}.s3{animation-delay:-.15s}.s4{animation-delay:-.20s}
+    .s5{animation-delay:-.25s}.s6{animation-delay:-.30s}.s7{animation-delay:-.35s}.s8{animation-delay:-.40s}
+    .s9{animation-delay:-.45s}.s10{animation-delay:-.50s}.s11{animation-delay:-.55s}.s12{animation-delay:-.60s}
+    .s13{animation-delay:-.65s}.s14{animation-delay:-.70s}.s15{animation-delay:-.75s}.s16{animation-delay:-.80s}
+    @keyframes wave{0%,100%{transform:translateY(-7px)}50%{transform:translateY(7px)}}
+    .spine{animation:spine 1.5s ease-in-out infinite;transform-origin:center top;transform-box:fill-box}
+    @keyframes spine{0%,100%{opacity:.5;transform:scaleY(.82)}50%{opacity:1;transform:scaleY(1.2)}}
+    .whisker{animation:whisk 3s ease-in-out infinite}
+    @keyframes whisk{0%,100%{transform:rotate(-4.5deg)}50%{transform:rotate(4.5deg)}}
+    .tailfin{animation:fin 1.4s ease-in-out infinite;transform-origin:32px 222px}
+    @keyframes fin{0%,100%{transform:rotate(-9deg) scaleX(.9)}50%{transform:rotate(9deg) scaleX(1.06)}}
+    .eyeglow{animation:blink 4.2s ease-in-out infinite}
+    @keyframes blink{0%,90%,100%{opacity:1}94%{opacity:.25}}
+    .math{animation:rise 3.4s ease-out infinite}
+    .m1{animation-delay:-.0s}.m2{animation-delay:-.5s}.m3{animation-delay:-1.0s}.m4{animation-delay:-1.5s}
+    .m5{animation-delay:-2.0s}.m6{animation-delay:-2.5s}.m7{animation-delay:-2.2s}.m8{animation-delay:-3.0s}
+    .mval{animation:rise 4.6s ease-out infinite}
+    .v1{animation-delay:-.3s}.v2{animation-delay:-1.4s}.v3{animation-delay:-2.6s}.v4{animation-delay:-3.9s}
+    @keyframes rise{0%{opacity:0;transform:translate(0,0) scale(.5)}18%{opacity:1;transform:translate(-6px,-14px) scale(1)}80%{opacity:.8}100%{opacity:0;transform:translate(-24px,-100px) scale(.72)}}
+    .star{animation:tw 3s ease-in-out infinite}
+    @keyframes tw{0%,100%{opacity:.15}50%{opacity:.9}}
+  ]]></style>
+  <rect width="1200" height="500" rx="16" fill="#07070e"/>
+  <rect width="1200" height="500" rx="16" fill="none" stroke="#1b1b24" stroke-width="2"/>
+  <g id="steer">
+    <g fill="#f1d9a0">
+      <circle class="star" cx="60" cy="52" r="1.1"/>
+      <circle class="star" cx="180" cy="432" r=".9"/>
+      <circle class="star" cx="300" cy="40" r="1.2"/>
+      <circle class="star" cx="900" cy="46" r="1"/>
+      <circle class="star" cx="1050" cy="420" r=".9"/>
+      <circle class="star" cx="1132" cy="92" r=".8"/>
+      <circle class="star" cx="470" cy="462" r=".7"/>
+      <circle class="star" cx="720" cy="32" r="1"/>
+      <circle class="star" cx="560" cy="468" r=".8"/>
+      <circle class="star" cx="118" cy="130" r=".7"/>
+      <circle class="star" cx="1020" cy="180" r=".6"/>
+      <circle class="star" cx="410" cy="66" r=".7"/>
+    </g>
+    <g class="swim">
+      <g id="dragon">
+        <path d="M145 250 C 300 253, 520 246, 700 250 S 880 246 910 250" fill="none" stroke="url(#bodyG)" stroke-width="30" stroke-linecap="round" opacity=".35"/>
+        <path d="M145 250 C 110 252, 76 238, 34 224 L 46 216 C 82 226, 116 238, 145 243 Z" fill="url(#bodyG)" opacity=".92"/>
+        <path class="tailfin" d="M34 224 C 22 217, 6 206, -6 195 L 4 199 C 8 208, 16 216, 28 220 Z" fill="url(#finG)"/>
+        <ellipse class="seg s16" cx="145" cy="250" rx="10" ry="8" fill="url(#bodyG)"/>
+        <ellipse class="seg s15" cx="190" cy="250" rx="11" ry="8.5" fill="url(#bodyG)"/>
+        <ellipse class="seg s14" cx="235" cy="250" rx="12" ry="9" fill="url(#bodyG)"/>
+        <ellipse class="seg s13" cx="280" cy="250" rx="13" ry="9.5" fill="url(#bodyG)"/>
+        <ellipse class="seg s12" cx="325" cy="250" rx="14" ry="10.2" fill="url(#bodyG)"/>
+        <ellipse class="seg s11" cx="370" cy="250" rx="15" ry="11" fill="url(#bodyG)"/>
+        <ellipse class="seg s10" cx="415" cy="250" rx="15.5" ry="11.6" fill="url(#bodyG)"/>
+        <ellipse class="seg s9" cx="460" cy="250" rx="16" ry="12.2" fill="url(#bodyG)"/>
+        <ellipse class="seg s8" cx="505" cy="250" rx="16.5" ry="12.8" fill="url(#bodyG)"/>
+        <ellipse class="seg s7" cx="550" cy="250" rx="17" ry="13.4" fill="url(#bodyG)"/>
+        <ellipse class="seg s6" cx="595" cy="250" rx="17.5" ry="14" fill="url(#bodyG)"/>
+        <ellipse class="seg s5" cx="640" cy="250" rx="17.5" ry="14.4" fill="url(#bodyG)"/>
+        <ellipse class="seg s4" cx="685" cy="250" rx="17.5" ry="14.6" fill="url(#bodyG)"/>
+        <ellipse class="seg s3" cx="730" cy="250" rx="17" ry="14.6" fill="url(#bodyG)"/>
+        <ellipse class="seg s2" cx="775" cy="250" rx="17" ry="14.4" fill="url(#bodyG)"/>
+        <ellipse class="seg s1" cx="820" cy="250" rx="16.5" ry="14" fill="url(#bodyG)"/>
+        <g class="spine" fill="#f2dfad">
+          <polygon points="145,243 151,233 157,243"/>
+          <polygon points="190,242 196,231 202,242"/>
+          <polygon points="235,241 241,229 247,241"/>
+          <polygon points="280,241 286,228 292,241"/>
+          <polygon points="325,240 331,226 337,240"/>
+          <polygon points="370,239 376,224 382,239"/>
+          <polygon points="415,238 421,222 427,238"/>
+          <polygon points="460,238 466,221 472,238"/>
+          <polygon points="505,237 511,220 517,237"/>
+          <polygon points="550,237 556,219 562,237"/>
+          <polygon points="595,236 601,218 607,236"/>
+          <polygon points="640,236 646,218 652,236"/>
+          <polygon points="685,235 691,218 697,235"/>
+          <polygon points="730,235 736,219 742,235"/>
+          <polygon points="775,236 781,220 787,236"/>
+          <polygon points="820,236 826,221 832,236"/>
+        </g>
+        <g id="head" transform="translate(872 250)">
+          <path d="M0 0 L40 -22 L58 -16 L66 -2 L58 16 L40 22 Z" fill="url(#bodyG)"/>
+          <path d="M40 -22 L50 -40 L62 -26 L58 -16 Z" fill="#d3932c"/>
+          <path d="M40 22 L50 40 L62 26 L58 16 Z" fill="#d3932c"/>
+          <path d="M58 -16 L82 -26 L86 -16 L66 -2 Z" fill="#e8b95c"/>
+          <path d="M58 16 L82 26 L86 16 L66 2 Z" fill="#e8b95c"/>
+          <circle class="eyeglow" cx="36" cy="-5" r="4" fill="url(#eyeG)" filter="url(#nglow)"/>
+          <circle cx="36" cy="-5" r="1.6" fill="#0b0d12"/>
+          <circle class="eyeglow" cx="36" cy="5" r="4" fill="url(#eyeG)" filter="url(#nglow)"/>
+          <circle cx="36" cy="5" r="1.6" fill="#0b0d12"/>
+          <path class="whisker" style="transform-origin:58px -8px" d="M58 -8 C 76 -24, 104 -30, 126 -22" fill="none" stroke="#e7d5ae" stroke-width="1.5" stroke-opacity=".7" stroke-linecap="round"/>
+          <path class="whisker" style="transform-origin:58px -3px" d="M58 -3 C 78 -14, 110 -14, 130 -6" fill="none" stroke="#e7d5ae" stroke-width="1.3" stroke-opacity=".6" stroke-linecap="round"/>
+          <path class="whisker" style="transform-origin:58px -9px" d="M58 -12 C 78 -27, 104 -35, 124 -29" fill="none" stroke="#e7d5ae" stroke-width="1" stroke-opacity=".5" stroke-linecap="round"/>
+          <path class="whisker" style="transform-origin:58px 8px" d="M58 8 C 76 24, 104 30, 126 22" fill="none" stroke="#e7d5ae" stroke-width="1.5" stroke-opacity=".7" stroke-linecap="round"/>
+          <path class="whisker" style="transform-origin:58px 3px" d="M58 3 C 78 14, 110 14, 130 6" fill="none" stroke="#e7d5ae" stroke-width="1.3" stroke-opacity=".6" stroke-linecap="round"/>
+          <path d="M66 -2 L84 -2 L92 0 L84 2 L66 2 Z" fill="#c0487e" opacity=".55"/>
+        </g>
+      </g>
+      <g class="math" font-family="Georgia,serif" font-size="15" text-anchor="middle">
+        <text class="m1" x="38" y="212" fill="#e8b95c">&#8747;</text>
+        <text class="m2" x="38" y="212" fill="#c0487e">&#960;</text>
+        <text class="m3" x="38" y="212" fill="#f0dcb2">&#8721;</text>
+        <text class="m4" x="38" y="212" fill="#e8b95c">&#966;</text>
+        <text class="m5" x="38" y="212" fill="#c0487e">&#8730;</text>
+        <text class="m6" x="38" y="212" fill="#f0dcb2">e</text>
+        <text class="m7" x="38" y="212" fill="#e8b95c">&#8734;</text>
+        <text class="m8" x="38" y="212" fill="#c0487e">&#8706;</text>
+      </g>
+      <g class="mval" font-family="Georgia,serif" font-size="11" fill="#e7d5ae" text-anchor="middle" opacity=".85">
+        <text class="v1" x="38" y="212">3.14159</text>
+        <text class="v2" x="38" y="212">1.61803</text>
+        <text class="v3" x="38" y="212">2.71828</text>
+        <text class="v4" x="38" y="212">1.41421</text>
+      </g>
+    </g>
+    <g font-family="Arial,Helvetica,sans-serif" letter-spacing="3" font-size="9">
+      <text x="38" y="32" fill="#e3d2a6" opacity=".55">NAGA BILANGAN</text>
+      <text x="1162" y="32" text-anchor="end" fill="#c0487e" opacity=".8">RUMUS MEMANCAR DARI EKOR</text>
+      <text x="600" y="468" text-anchor="middle" fill="#e8b95c" opacity=".85">DURI BERDENYUT &#183; KUMIS BERAYUN &#183; RUMUS MEMANCAR DARI EKOR</text>
+      <text x="600" y="484" text-anchor="middle" fill="#c0487e" opacity=".6">&#8747; &#960; &#8721; &#966; &#8730; e &#8734; &#8706;</text>
+    </g>
   </g>
-
-  <g id="dragon-static" class="body-undulate" fill="none" stroke="url(#dg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" filter="url(#dgl)">
-    <path d="M230 215C260 150 330 130 380 170C430 210 400 280 340 280C280 280 260 220 300 190C340 160 400 180 420 230C440 280 400 330 340 320C280 310 250 260 280 220C310 180 380 190 400 240"/>
-  </g>
-  <g id="dragon-nodes" fill="#f0dcb2">
-    <circle cx="230" cy="215" r="6" fill="#e8b95c"/>
-    <circle cx="290" cy="175" r="5"/>
-    <circle cx="340" cy="170" r="4.5"/>
-    <circle cx="380" cy="190" r="4"/>
-    <circle cx="400" cy="230" r="3.5"/>
-    <circle cx="405" cy="270" r="3"/>
-    <circle cx="380" cy="305" r="2.6"/>
-    <circle cx="340" cy="320" r="2.2"/>
-    <circle cx="300" cy="315" r="1.9"/>
-    <circle cx="280" cy="290" r="1.6"/>
-    <circle cx="275" cy="260" r="1.4"/>
-    <circle cx="285" cy="235" r="1.2"/>
-  </g>
-  <g id="dragon-head" fill="#ffe3a0">
-    <circle cx="230" cy="215" r="9" filter="url(#dgl)"/>
-
   <script><![CDATA[
     (function(){
-      var svg=document.documentElement,NS="http://www.w3.org/2000/svg";
-      var W=1200,H=430,SEG=14,LEN=22;
-      var pts=[],mouse={x:600,y:215},started=false;
-      var formulas=["e^{iπ}+1=0","φ=1,618","∞","∫ Σ √","π≈3,14159","∇·E=ρ","ζ(s)","Fₙ=Fₙ₋₁+Fₙ₋₂","∂f/∂x","√2≈1,414","c=λf","E=mc²","lim 1/n","Σ1/n²","a²+b²=c²","0,1,1,2,3,5,8","2,3,5,7,11,13","∮E·dl","det(A)","rank(A)"];
-      for(var i=0;i<SEG;i++){pts.push({x:600-i*LEN,y:215});}
-      ["dragon-static","dragon-nodes","dragon-head","numbers-static"].forEach(function(id){
-        var el=document.getElementById(id);if(el)el.setAttribute("display","none");
-      });
-      var bodyG=document.createElementNS(NS,"g");
-      bodyG.setAttribute("fill","none");
-      bodyG.setAttribute("stroke","url(#dg)");
-      bodyG.setAttribute("stroke-width","2.6");
-      bodyG.setAttribute("stroke-linecap","round");
-      bodyG.setAttribute("stroke-linejoin","round");
-      bodyG.setAttribute("filter","url(#dgl)");
-      var bodyPath=document.createElementNS(NS,"path");
-      bodyG.appendChild(bodyPath);
-      svg.appendChild(bodyG);
-      var nodeG=document.createElementNS(NS,"g");
-      svg.appendChild(nodeG);
-      var headG=document.createElementNS(NS,"g");
-      headG.setAttribute("fill","#ffe3a0");
-      var hc=document.createElementNS(NS,"circle");
-      hc.setAttribute("r","10");hc.setAttribute("filter","url(#dgl)");
-      headG.appendChild(hc);
-      var e1=document.createElementNS(NS,"circle");e1.setAttribute("cx","-4");e1.setAttribute("cy","-3");e1.setAttribute("r","2.4");e1.setAttribute("fill","#0b0d12");
-      var e2=document.createElementNS(NS,"circle");e2.setAttribute("cx","4");e2.setAttribute("cy","-3");e2.setAttribute("r","2.4");e2.setAttribute("fill","#0b0d12");
-      headG.appendChild(e1);headG.appendChild(e2);
-      svg.appendChild(headG);
-      var tailEmit=0;
+      var svg=document.documentElement,steer=document.getElementById("steer");
+      if(!steer||typeof requestAnimationFrame==="undefined")return;
+      var target={x:0,y:0},cur={x:0,y:0};
       svg.addEventListener("mousemove",function(e){
-        var pt=svg.createSVGPoint();pt.x=e.clientX;pt.y=e.clientY;
-        var ctm=svg.getScreenCTM().inverse();
-        var p=pt.matrixTransform(ctm);
-        mouse.x=p.x;mouse.y=p.y;started=true;
+        var ctm=svg.getScreenCTM?svg.getScreenCTM():null;
+        if(!ctm)return;
+        var p=svg.createSVGPoint();p.x=e.clientX;p.y=e.clientY;
+        var q=p.matrixTransform(ctm.inverse());
+        target.x=q.x-600;target.y=q.y-250;
       });
-      svg.addEventListener("mouseleave",function(){started=false;});
-      function spawnNum(){
-        var tx=pts[SEG-1].x-30+Math.random()*40;
-        var ty=pts[SEG-1].y-20+Math.random()*30;
-        var t=document.createElementNS(NS,"text");
-        t.setAttribute("x",tx);t.setAttribute("y",ty);
-        t.setAttribute("text-anchor","middle");
-        t.setAttribute("font-family","Georgia,serif");
-        t.setAttribute("font-size","13");
-        t.setAttribute("fill","#f0dcb2");
-        t.setAttribute("opacity","0");
-        t.textContent=formulas[Math.floor(Math.random()*formulas.length)];
-        svg.appendChild(t);
-        var start=Date.now(),dur=2400;
-        function anim(){
-          var k=(Date.now()-start)/dur;
-          if(k>=1){svg.removeChild(t);return;}
-          t.setAttribute("opacity",String(Math.sin(Math.PI*k)));
-          t.setAttribute("transform","translate(0,"+(-k*55)+") scale("+(0.7+k*0.4)+")");
-          requestAnimationFrame(anim);
-        }
-        requestAnimationFrame(anim);
-      }
-      function frame(){
-        if(started){
-          pts[0].x+=(mouse.x-pts[0].x)*0.18;
-          pts[0].y+=(mouse.y-pts[0].y)*0.18;
-        }else{
-          var t=Date.now()*0.001;
-          pts[0].x=600+Math.sin(t*0.7)*120;
-          pts[0].y=215+Math.cos(t*0.5)*60;
-        }
-        for(var i=1;i<SEG;i++){
-          var dx=pts[i-1].x-pts[i].x,dy=pts[i-1].y-pts[i].y;
-          var d=Math.sqrt(dx*dx+dy*dy)||1;
-          var nx=dx/d,ny=dy/d;
-          pts[i].x=pts[i-1].x-nx*LEN;
-          pts[i].y=pts[i-1].y-ny*LEN;
-        }
-        var d="M"+pts[0].x.toFixed(1)+","+pts[0].y.toFixed(1);
-        for(var i=1;i<SEG;i++){d+=" L"+pts[i].x.toFixed(1)+","+pts[i].y.toFixed(1);}
-        bodyPath.setAttribute("d",d);
-        while(nodeG.firstChild){nodeG.removeChild(nodeG.firstChild);}
-        for(var i=1;i<SEG;i++){
-          var c=document.createElementNS(NS,"circle");
-          var r=5.5*(1-i/SEG)+1.5;
-          c.setAttribute("cx",pts[i].x.toFixed(1));c.setAttribute("cy",pts[i].y.toFixed(1));c.setAttribute("r",r.toFixed(1));
-          c.setAttribute("fill",i/SEG>0.5?"#c0487e":"#f0dcb2");
-          nodeG.appendChild(c);
-        }
-        headG.setAttribute("transform","translate("+pts[0].x.toFixed(1)+","+pts[0].y.toFixed(1)+")");
-        tailEmit++;
-        if(tailEmit%18===0){spawnNum();}
-        requestAnimationFrame(frame);
-      }
-      frame();
+      (function loop(){
+        cur.x+=(target.x-cur.x)*0.05;
+        cur.y+=(target.y-cur.y)*0.05;
+        steer.setAttribute("transform","translate("+cur.x.toFixed(1)+","+cur.y.toFixed(1)+")");
+        requestAnimationFrame(loop);
+      })();
     })();
   ]]></script>
-    <circle cx="226" cy="212" r="2.2" fill="#0b0d12"/>
-    <circle cx="234" cy="212" r="2.2" fill="#0b0d12"/>
-    <path d="M218 218L210 224M218 218L212 215" stroke="#c0487e" stroke-width="1.4" stroke-linecap="round"/>
-  </g>
-
-  <g id="numbers-static" class="num" text-anchor="middle">
-    <text x="285" y="235">e^{iπ} + 1 = 0</text>
-    <text x="275" y="260" class="n2">φ = 1,618</text>
-    <text x="300" y="290" class="n3">∞</text>
-    <text x="340" y="320" class="n4">∫ Σ √</text>
-    <text x="380" y="305" class="n5">π ≈ 3,14159</text>
-  </g>
-
-  <g font-family="Arial,Helvetica,sans-serif" letter-spacing="4" font-size="9">
-    <text x="36" y="30" fill="#e3d2a6" opacity=".55">NAGA MATEMATIKA</text>
-    <text x="1164" y="30" text-anchor="end" fill="#c0487e" opacity=".85">GERAKKAN KURSOR UNTUK BERINTERAKSI</text>
-    <text x="600" y="392" text-anchor="middle" fill="#e8b95c" opacity=".8">DARI EKORNYA KELUAR RUMUS YANG TIDAK PERNAH HABIS</text>
-    <text x="600" y="408" text-anchor="middle" fill="#c0487e" opacity=".6">SETIAP EKOR MENULIS SATU PERSAMAAN BARU</text>
-  </g>
 </svg>

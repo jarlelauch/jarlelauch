@@ -100,58 +100,18 @@ hover the glyphs; each flares in gold or magenta when touched.
 <p align="center">
   <img
     src="https://raw.githubusercontent.com/jarlelauch/jarlelauch/main/assets/warp.svg"
+    alt="Kisi ruang-waktu melengkung oleh massa di tengahnya; foton mengalir mengikuti kelengkungan."
+    width="100%"
+  />
+</p>
+
+<p align="center">
+  <sub>◎ Di balik setiap sistem, geometri yang melangkung.</sub>
+</p>
 
 <p align="center">
   <img
     src="https://raw.githubusercontent.com/jarlelauch/jarlelauch/main/assets/konvergensi.svg"
-
-<p align="center">
-  <img
-    src="https://raw.githubusercontent.com/jarlelauch/jarlelauch/main/assets/phyllotaxis.svg"
-
-<p align="center">
-  <img
-    src="https://raw.githubusercontent.com/jarlelauch/jarlelauch/main/assets/spirograph.svg"
-
-<p align="center">
-  <img
-    src="https://raw.githubusercontent.com/jarlelauch/jarlelauch/main/assets/pendulumwave.svg"
-
-<p align="center">
-  <img
-    src="https://raw.githubusercontent.com/jarlelauch/jarlelauch/main/assets/naga.svg"
-    alt="Naga matematika minimalis: gerakkan kursor untuk berinteraksi; dari ekornya keluar rumus dan angka acak."
-    width="100%"
-  />
-</p>
-
-<p align="center">
-  <sub>◄ Gerakkan kursor · naga mengikuti · ekor menuliskan rumus tanpa henti.</sub>
-</p>
-    alt="Gelombang pendulum: delapan belas pendulum berayun membentuk ilusi gelombang."
-    width="100%"
-  />
-</p>
-
-<p align="center">
-  <sub>◄ Delapan belas periode · satu pola yang tidak pernah sama.</sub>
-</p>
-    alt="Spirograf: tiga renda hipotikroid berputar dengan rasio jari-jari berbeda."
-    width="100%"
-  />
-</p>
-
-<p align="center">
-  <sub>◄ Ketika lingkaran berdikar di dalam lingkaran, renda terlahir.</sub>
-</p>
-    alt="Filotaksis: spiral bunga matahari dengan sudut emas 137,5 derajat."
-    width="100%"
-  />
-</p>
-
-<p align="center">
-  <sub>◄ 137,5° · sudut emas · 34 dan 55 spiral Fibonacci.</sub>
-</p>
     alt="Mesin konvergensi: enam lengan berputar harmonik menjumlahkan satu kurva."
     width="100%"
   />
@@ -160,13 +120,53 @@ hover the glyphs; each flares in gold or magenta when touched.
 <p align="center">
   <sub>◎ Setiap kurva adalah jumlah dari banyak lingkaran · enam harmonik.</sub>
 </p>
-    alt="Kisi ruang-waktu melengkung oleh massa di tengahnya; foton mengalir mengikuti kelengkungan."
+
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/jarlelauch/jarlelauch/main/assets/phyllotaxis.svg"
+    alt="Filotaksis: spiral bunga matahari dengan sudut emas 137,5 derajat."
     width="100%"
   />
 </p>
 
 <p align="center">
-  <sub>◎ Di balik setiap sistem, geometri yang melangkung.</sub>
+  <sub>◄ 137,5° · sudut emas · 34 dan 55 spiral Fibonacci.</sub>
+</p>
+
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/jarlelauch/jarlelauch/main/assets/spirograph.svg"
+    alt="Spirograf: tiga renda hipotikroid berputar dengan rasio jari-jari berbeda."
+    width="100%"
+  />
+</p>
+
+<p align="center">
+  <sub>◄ Ketika lingkaran berdikar di dalam lingkaran, renda terlahir.</sub>
+</p>
+
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/jarlelauch/jarlelauch/main/assets/pendulumwave.svg"
+    alt="Gelombang pendulum: delapan belas pendulum berayun membentuk ilusi gelombang."
+    width="100%"
+  />
+</p>
+
+<p align="center">
+  <sub>◄ Delapan belas periode · satu pola yang tidak pernah sama.</sub>
+</p>
+
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/jarlelauch/jarlelauch/main/assets/naga.svg"
+    alt="Naga matematika minimalis: berenang, duri berdenyut, kumis berayun, rumus memancar dari ekor."
+    width="100%"
+  />
+</p>
+
+<p align="center">
+  <sub>◄ Gerakkan kursor · naga mengikuti · ekor menuliskan rumus tanpa henti.</sub>
 </p>
 
 ---
