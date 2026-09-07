@@ -270,6 +270,18 @@ e^{i\pi} + 1 = 0
 
 ## Constellation
 
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/jarlelauch/jarlelauch/main/assets/starmap.svg"
+    alt="Peta langit: tiga rasi matematis berbentuk phi, sigma, dan integral."
+    width="100%"
+  />
+</p>
+
+<p align="center">
+  <sub>✦ Konstelasi di atas konstelasi · rasi benda-benda di bawah ini.</sub>
+</p>
+
 | body | orbit | signal |
 | :-- | :-- | :-- |
 | [**j-sgent**](https://github.com/jarlelauch/j-sgent) | J S'GENT Orbital AI System — a private, single-account intelligence | `python · live` |
