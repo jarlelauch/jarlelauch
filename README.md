@@ -17,6 +17,8 @@
   ·
   <a href="#readings">▤ READINGS</a>
   ·
+  <a href="#orbital-engine">◎ ORBITAL</a>
+  ·
   <a href="#spectra">≡ SPECTRA</a>
   ·
   <a href="#constellation">✦ CONSTELLATION</a>
@@ -40,6 +42,36 @@
   <img src="https://img.shields.io/github/stars/jarlelauch/j-sgent?style=for-the-badge&logo=python&labelColor=07070e&color=e8b95c" alt="j-sgent stars" />
   <img src="https://img.shields.io/github/last-commit/jarlelauch/j-sgent?style=for-the-badge&logo=python&labelColor=07070e&color=e8b95c" alt="j-sgent last commit" />
   <img src="https://img.shields.io/github/languages/top/jarlelauch/j-sgent?style=for-the-badge&logo=python&labelColor=07070e&color=e8b95c" alt="j-sgent top language" />
+</p>
+
+## Orbital Engine
+
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/jarlelauch/jarlelauch/main/assets/orbital.svg"
+    alt="Clockwork singularity: numbers and constants orbit a single center across three tilted planes."
+    width="100%"
+  />
+</p>
+
+<details>
+<summary><b>◎ How the engine behaves</b></summary>
+<br />
+
+Three planes, one singularity.
+
+- **plane A** — `π` · `e` · `i` race the inner ring (11s), counter to the middle plane.
+- **plane B** — `φ` · `Σ` · `∫` ride the middle ring (17s), slowly precessing.
+- **plane C** — `∞` · `0` · `1` patrol the outer ring (29s).
+
+Every glyph keeps its own period, phase and inclination — a mechanism where
+numbers are always in motion and always in relation. Open the SVG directly to
+hover the glyphs; each flares in gold or magenta when touched.
+
+</details>
+
+<p align="center">
+  <sub>◎ Numbers in motion, always in relation · pure SVG, no JavaScript</sub>
 </p>
 
 ---
