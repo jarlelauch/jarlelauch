@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">Mathematical black hole</title>
+  <desc id="desc">A dark, modern gothic black hole consumes drifting numbers and equations while orbital rings rotate around its event horizon.</desc>
+  <defs>
+    <linearGradient id="void" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#08090e"/>
+      <stop offset="0.46" stop-color="#11101a"/>
+      <stop offset="1" stop-color="#06070b"/>
+    </linearGradient>
+    <radialGradient id="well" cx="50%" cy="50%" r="58%">
+      <stop offset="0" stop-color="#000106"/>
+      <stop offset="0.26" stop-color="#070711"/>
+      <stop offset="0.49" stop-color="#2e1827" stop-opacity=".77"/>
+      <stop offset="0.68" stop-color="#aa4a78" stop-opacity=".23"/>
+      <stop offset="1" stop-color="#c9a059" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="core">
+      <stop offset="0" stop-color="#000"/>
+      <stop offset=".68" stop-color="#010108"/>
+      <stop offset=".88" stop-color="#251224"/>
+      <stop offset="1" stop-color="#d79d54"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2dfad"/>
+      <stop offset=".45" stop-color="#c4864d"/>
+      <stop offset="1" stop-color="#86385e"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e7d5ae" stop-opacity="0"/>
+      <stop offset=".3" stop-color="#e7d5ae" stop-opacity=".7"/>
+      <stop offset=".7" stop-color="#d47b9e" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#d47b9e" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="13"/>
+    </filter>
+    <filter id="warp" x="-30%" y="-30%" width="160%" height="160%">
+      <feTurbulence type="fractalNoise" baseFrequency=".015" numOctaves="2" seed="11" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="9" xChannelSelector="R" yChannelSelector="B"/>
+    </filter>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#d3bb84" stroke-opacity=".055" stroke-width=".7"/>
+    </pattern>
+    <path id="orbit-a" d="M 215,216 C 240,38 960,36 990,215 C 962,391 243,392 215,216 Z"/>
+    <path id="orbit-b" d="M 343,215 C 395,87 823,78 859,215 C 823,352 393,341 343,215 Z"/>
+    <path id="infall-left" d="M 75,110 C 265,122 392,180 554,211"/>
+    <path id="infall-right" d="M 1130,315 C 934,300 828,263 645,222"/>
+    <path id="infall-top" d="M 750,30 C 724,95 666,147 618,199"/>
+    <style><![CDATA[
+      .ring { transform-origin: 600px 215px; }
+      .r1 { animation: spin 20s linear infinite; }
+      .r2 { animation: backspin 13s linear infinite; }
+      .r3 { animation: spin 8s linear infinite; }
+      .r4 { animation: backspin 32s linear infinite; }
+      .star { animation: twinkle 3.8s ease-in-out infinite alternate; }
+      .s2 { animation-delay: -1.2s; } .s3 { animation-delay: -2.4s; } .s4 { animation-delay: -3.1s; }
+      .glyph { fill: #ecd9ad; font-family: Georgia, 'Times New Roman', serif; letter-spacing: .08em; filter: url(#glow); }
+      .g1 { animation: pull-a 8s ease-in infinite; }
+      .g2 { animation: pull-b 10s ease-in infinite; animation-delay: -2s; }
+      .g3 { animation: pull-c 12s ease-in infinite; animation-delay: -5s; }
+      .g4 { animation: pull-d 9s ease-in infinite; animation-delay: -4s; }
+      .horizon { animation: breathe 5s ease-in-out infinite; transform-origin: 600px 215px; }
+      .accretion { animation: spin 6s linear infinite; transform-origin: 600px 215px; }
+      .caption { font-family: Arial, Helvetica, sans-serif; letter-spacing: 4px; fill: #e5d5ad; }
+      .measure { stroke-dasharray: 4 10; animation: dash 10s linear infinite; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes backspin { to { transform: rotate(-360deg); } }
+      @keyframes dash { to { stroke-dashoffset: -140; } }
+      @keyframes twinkle { from { opacity: .18; transform: scale(.7); } to { opacity: 1; transform: scale(1.45); } }
+      @keyframes breathe { 0%,100% { opacity: .68; transform: scale(.96); } 50% { opacity: 1; transform: scale(1.045); } }
+      @keyframes pull-a { 0% { transform: translate(-35px,-18px) scale(1); opacity: 0; } 13% { opacity: .9; } 72% { opacity: .85; } 100% { transform: translate(500px,95px) scale(.08); opacity: 0; } }
+      @keyframes pull-b { 0% { transform: translate(170px,105px) scale(1); opacity: 0; } 16% { opacity: .75; } 70% { opacity: .8; } 100% { transform: translate(238px,-74px) scale(.05); opacity: 0; } }
+      @keyframes pull-c { 0% { transform: translate(-80px,26px) scale(1); opacity: 0; } 11% { opacity: .8; } 76% { opacity: .7; } 100% { transform: translate(418px,-42px) scale(.06); opacity: 0; } }
+      @keyframes pull-d { 0% { transform: translate(80px,-82px) scale(1); opacity: 0; } 17% { opacity: .86; } 75% { opacity: .7; } 100% { transform: translate(-76px,145px) scale(.05); opacity: 0; } }
+    ]]></style>
+  </defs>
+
+  <rect width="1200" height="430" rx="18" fill="url(#void)"/>
+  <rect width="1200" height="430" rx="18" fill="url(#grid)"/>
+  <path d="M0 75H1200M0 355H1200" stroke="url(#ink)" stroke-width="1" opacity=".42"/>
+  <path d="M67 215H1133M600 24V406" class="measure" stroke="#d8c595" stroke-opacity=".24" stroke-width="1"/>
+
+  <g fill="#f1d9a0">
+    <circle class="star" cx="76" cy="73" r="1.4"/><circle class="star s2" cx="148" cy="337" r="1"/><circle class="star s3" cx="226" cy="125" r="1.5"/><circle class="star s4" cx="334" cy="68" r="1"/>
+    <circle class="star s2" cx="895" cy="83" r="1.2"/><circle class="star s3" cx="1080" cy="115" r="1.5"/><circle class="star s4" cx="1025" cy="359" r="1"/><circle class="star" cx="1146" cy="245" r="1.3"/>
+    <circle class="star s3" cx="416" cy="379" r="1"/><circle class="star s4" cx="765" cy="373" r="1.4"/><circle class="star s2" cx="110" cy="205" r=".9"/><circle class="star" cx="830" cy="44" r=".8"/>
+  </g>
+
+  <g opacity=".5" fill="none">
+    <ellipse class="ring r4" cx="600" cy="215" rx="460" ry="131" stroke="#b57670" stroke-width=".8" stroke-dasharray="3 20"/>
+    <ellipse class="ring r1" cx="600" cy="215" rx="391" ry="177" stroke="url(#gold)" stroke-width="1.3" stroke-dasharray="52 17 4 21"/>
+    <ellipse class="ring r2" cx="600" cy="215" rx="317" ry="103" stroke="#e3c47d" stroke-width="1" stroke-dasharray="2 14"/>
+  </g>
+
+  <g class="g1 glyph" font-size="18"><text x="80" y="112">∫ 0 1</text><text x="168" y="142" font-size="13">dx</text></g>
+  <g class="g2 glyph" font-size="21"><text x="878" y="109">∞</text><text x="906" y="128" font-size="12">lim</text></g>
+  <g class="g3 glyph" font-size="17"><text x="73" y="251">φ = 1.618</text></g>
+  <g class="g4 glyph" font-size="23"><text x="762" y="69">Σ</text><text x="790" y="71" font-size="12">n=1</text></g>
+  <g class="g2 glyph" font-size="15"><text x="1001" y="334">∂/∂t</text></g>
+  <g class="g1 glyph" font-size="16"><text x="240" y="360">eⁱᵖ + 1 = 0</text></g>
+
+  <g transform="translate(600 215)">
+    <circle r="205" fill="url(#well)" opacity=".72"/>
+    <circle class="horizon" r="121" fill="none" stroke="#ca7b83" stroke-width="1" stroke-opacity=".48" stroke-dasharray="1 11"/>
+    <g class="accretion" fill="none" filter="url(#glow)">
+      <ellipse rx="174" ry="61" stroke="url(#gold)" stroke-width="5" stroke-linecap="round" stroke-dasharray="96 66 8 30" opacity=".87"/>
+      <ellipse rx="156" ry="46" stroke="#d5a76c" stroke-width="1.4" stroke-dasharray="8 12 66 14" opacity=".8"/>
+      <path d="M-169 3C-114-63 119-71 168-2C111 64-114 60-169 3Z" stroke="#a4476c" stroke-width="1.4" stroke-dasharray="18 10" opacity=".75"/>
+    </g>
+    <circle r="100" fill="url(#core)" filter="url(#warp)"/>
+    <circle r="77" fill="#000109"/>
+    <circle r="65" fill="none" stroke="#211427" stroke-width="1"/>
+    <circle r="39" fill="#000"/>
+    <path d="M-24 0H24M0-24V24" stroke="#d6a45d" stroke-width=".8" opacity=".57"/>
+    <circle r="4" fill="#e6c87f" filter="url(#glow)"/>
+  </g>
+
+  <g class="ring r3" transform="rotate(-19 600 215)" fill="none" opacity=".9">
+    <ellipse cx="600" cy="215" rx="237" ry="75" stroke="url(#gold)" stroke-width="1.1" stroke-dasharray="36 9 3 8"/>
+    <ellipse cx="600" cy="215" rx="223" ry="70" stroke="#d89c61" stroke-width=".6" stroke-dasharray="2 8"/>
+  </g>
+
+  <g fill="none" stroke="#e7d4a2" stroke-opacity=".42" stroke-width="1">
+    <path d="M44 42h90m-90 0v18m90-18v18M1066 388h90m-90 0v-18m90 18v-18"/>
+    <path d="M44 384v-35m0 35h35M1156 46v35m0-35h-35"/>
+  </g>
+  <g class="caption" font-size="9">
+    <text x="62" y="63">SINGULARITY / 00.000</text>
+    <text x="941" y="384">EVENT HORIZON / ∆t</text>
+    <text x="62" y="401" fill="#c88675">MATH IS A GRAVITATIONAL LANGUAGE</text>
+  </g>
+  <g class="caption" text-anchor="middle">
+    <text x="600" y="206" font-size="10" fill="#e8d9b9">00110110</text>
+    <text x="600" y="230" font-size="7" fill="#b0786d">∅</text>
+  </g>
+</svg>
