@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="wt wd">
+  <title id="wt">Lengkungan ruang-waktu</title>
+  <desc id="wd">Kisi ruang-waktu yang melengkung oleh massa di tengahnya, dengan foton-foton mengalir mengikuti kelengkungan dan singularity berdenyut.</desc>
+  <defs>
+    <radialGradient id="wmass">
+      <stop offset="0" stop-color="#000"/>
+      <stop offset=".62" stop-color="#010108"/>
+      <stop offset=".88" stop-color="#261226"/>
+      <stop offset="1" stop-color="#d3932c"/>
+    </radialGradient>
+    <radialGradient id="whalo" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#d3932c" stop-opacity=".45"/>
+      <stop offset=".6" stop-color="#c0487e" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#c0487e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="wink" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e7d5ae" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#e7d5ae" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#c0487e" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="wglow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="2.8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style><![CDATA[
+    .wgrid { fill: none; stroke: #d8c595; stroke-opacity: .16; stroke-width: .9; }
+    .wgrid2 { fill: none; stroke: #d8c595; stroke-opacity: .1; stroke-width: .8; }
+    .fall { animation: wfall 4.2s cubic-bezier(.5,0,.9,.4) infinite; }
+    .fall.b { animation-duration: 5.6s; animation-delay: -2.1s; }
+    .fall.c { animation-duration: 6.8s; animation-delay: -4.4s; }
+    @keyframes wfall { 0% { opacity: 0; } 12% { opacity: .95; } 70% { opacity: .85; } 100% { opacity: 0; } }
+    .wcore { animation: wpulse 3.4s cubic-bezier(.75,0,.25,1) infinite; transform-origin: 600px 160px; }
+    @keyframes wpulse { 0%,100% { opacity: .55; transform: scale(.92); } 45% { opacity: 1; transform: scale(1.08); } }
+    .whalo { animation: whalo 7s ease-in-out infinite; transform-origin: 600px 160px; }
+    @keyframes whalo { 0%,100% { opacity: .45; transform: scale(.96); } 50% { opacity: .8; transform: scale(1.05); } }
+    .wstar { animation: wtw 2.6s ease-in-out infinite alternate; }
+    .wstar.b { animation-delay: -1.1s; } .wstar.c { animation-delay: -1.9s; }
+    @keyframes wtw { from { opacity: .18; } to { opacity: 1; } }
+    .wcap { font-family: Arial, Helvetica, sans-serif; letter-spacing: 4px; fill: #e3d2a6; font-size: 9px; }
+  ]]></style>
+
+  <rect width="1200" height="360" rx="14" fill="#07070e"/>
+
+  <g fill="#f1d9a0">
+    <circle class="wstar" cx="80" cy="52" r="1.1"/><circle class="wstar b" cx="210" cy="318" r=".9"/><circle class="wstar c" cx="360" cy="40" r="1"/>
+    <circle class="wstar b" cx="920" cy="46" r="1.1"/><circle class="wstar c" cx="1070" cy="316" r=".9"/><circle class="wstar" cx="1140" cy="90" r=".8"/>
+  </g>
+
+  <g class="wgrid">
+    <path d="M40 60C440 66 760 66 1160 60"/>
+    <path d="M40 100C440 112 760 112 1160 100"/>
+    <path d="M40 140C440 162 760 162 1160 140"/>
+    <path d="M40 180C440 196 760 196 1160 180"/>
+    <path d="M40 220C440 206 760 206 1160 220"/>
+    <path d="M40 260C440 250 760 250 1160 260"/>
+    <path d="M40 300C440 296 760 296 1160 300"/>
+  </g>
+  <g class="wgrid2">
+    <path d="M100 30C98 120 98 240 100 330"/>
+    <path d="M200 30C196 120 196 240 200 330"/>
+    <path d="M300 30C290 120 290 240 300 330"/>
+    <path d="M450 30C436 120 436 240 450 330"/>
+    <path d="M600 30V330"/>
+    <path d="M750 30C764 120 764 240 750 330"/>
+    <path d="M900 30C910 120 910 240 900 330"/>
+    <path d="M1100 30C1104 120 1104 240 1100 330"/>
+  </g>
+
+  <path d="M40 180C440 196 760 196 1160 180" class="fall" fill="none" stroke="#f0b860" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="10 220" filter="url(#wglow)" opacity=".8"/>
+  <path d="M450 30C436 120 436 240 450 330" class="fall b" fill="none" stroke="#d06ba3" stroke-width="1.3" stroke-linecap="round" stroke-dasharray="8 180" filter="url(#wglow)" opacity=".75"/>
+  <path d="M40 140C440 162 760 162 1160 140" class="fall c" fill="none" stroke="#f0dcb2" stroke-width="1" stroke-linecap="round" stroke-dasharray="6 260" filter="url(#wglow)" opacity=".7"/>
+
+  <g class="whalo"><circle cx="600" cy="160" r="96" fill="url(#whalo)"/></g>
+  <circle class="wcore" cx="600" cy="160" r="64" fill="none" stroke="#e8b95c" stroke-width="1.4" stroke-dasharray="2 8" opacity=".7"/>
+  <circle cx="600" cy="160" r="46" fill="url(#wmass)"/>
+  <circle cx="600" cy="160" r="32" fill="#000008"/>
+  <circle cx="600" cy="160" r="2.6" fill="#ffe3a0" filter="url(#wglow)"/>
+  <path d="M580 160H620M600 140V180" stroke="#d6a45d" stroke-width=".7" stroke-opacity=".5"/>
+
+  <g class="wcap">
+    <text x="36" y="30" fill="#e7d5ae" opacity=".55">LENGKUNGAN / KAIN RUANG-WAKTU</text>
+    <text x="1164" y="30" text-anchor="end" fill="#c0487e" opacity=".85">ds² = 0 · JALUR TERPENDEK FOTON</text>
+    <text x="600" y="330" text-anchor="middle" fill="#e8b95c" opacity=".8">MASSA MEMBERITAHU RUANG BAGAIMANA MELANGKUK</text>
+    <text x="600" y="346" text-anchor="middle" fill="#c0487e" opacity=".7">RUANG MEMBERITAHU MASSA BAGAIMANA BERGERAK · J. A. WHEELER</text>
+  </g>
+</svg>

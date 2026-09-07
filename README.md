@@ -97,6 +97,18 @@ hover the glyphs; each flares in gold or magenta when touched.
 | `INTERFACE · L3` | outer | human surface, minimal by law |
 | `MATH · L4` | halo | invariants, proofs, taste |
 
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/jarlelauch/jarlelauch/main/assets/warp.svg"
+    alt="Kisi ruang-waktu melengkung oleh massa di tengahnya; foton mengalir mengikuti kelengkungan."
+    width="100%"
+  />
+</p>
+
+<p align="center">
+  <sub>◎ Di balik setiap sistem, geometri yang melangkung.</sub>
+</p>
+
 ---
 
 ## Signal
