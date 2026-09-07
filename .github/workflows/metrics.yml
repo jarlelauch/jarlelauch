@@ -1,0 +1,31 @@
+name: nightly-readings
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: field-readings
+  cancel-in-progress: true
+
+jobs:
+  readings:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: render readings
+        run: python scripts/metrics.py jarlelauch
+      - name: commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/metrics.svg
+          git diff --cached --quiet || git commit -q -m "chore: refresh field readings [skip ci]"
+          git push -q origin main

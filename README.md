@@ -1,19 +1,23 @@
 <!--
-  PROFILE README · BLACK-HOLE MATHEMATICS
+  PROFILE README · BLACK-HOLE MATHEMATICS · OBSIDIAN ENGINE v2
   Profile repository for jarlelauch.
-  Keep assets/black-hole.svg beside this README, then commit and push.
+  Live badges, field-readings chart (auto-refreshed daily via GitHub Actions), and animated banner.
 -->
 
 <p align="center">
   <img
     src="https://raw.githubusercontent.com/jarlelauch/jarlelauch/main/assets/black-hole.svg"
-    alt="An animated gothic mathematical black hole drawing numbers and equations into its event horizon."
+    alt="Animated obsidian black hole: photon ring, shockwaves, shattering numbers and equations falling into the event horizon."
     width="100%"
   />
 </p>
 
 <p align="center">
   <a href="#signal">◈ SIGNAL</a>
+  ·
+  <a href="#readings">▤ READINGS</a>
+  ·
+  <a href="#constellation">✦ CONSTELLATION</a>
   ·
   <a href="#archive">△ ARCHIVE</a>
   ·
@@ -26,6 +30,14 @@
   <sub>agentic systems · mathematics · controlled chaos</sub>
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2Fjarlelauch&label=public%20repos&query=public_repos&style=for-the-badge&logo=github&labelColor=07070e&color=d3932c" alt="Public repos" />
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2Fjarlelauch&label=followers&query=followers&style=for-the-badge&logo=github&labelColor=07070e&color=c0487e" alt="Followers" />
+  <img src="https://img.shields.io/github/stars/jarlelauch/j-sgent?style=for-the-badge&logo=python&labelColor=07070e&color=e8b95c" alt="j-sgent stars" />
+  <img src="https://img.shields.io/github/last-commit/jarlelauch/j-sgent?style=for-the-badge&logo=python&labelColor=07070e&color=e8b95c" alt="j-sgent last commit" />
+  <img src="https://img.shields.io/github/languages/top/jarlelauch/j-sgent?style=for-the-badge&logo=python&labelColor=07070e&color=e8b95c" alt="j-sgent top language" />
+</p>
+
 ---
 
 ## Signal
@@ -34,7 +46,7 @@
 STATUS      : transmitting from the event horizon
 FOCUS       : Python · agentic systems · mathematical design
 METHOD      : reduce the noise; keep the wonder
-CURRENTLY   : building J S'GENT, an orbital AI system
+CURRENTLY   : orbiting J S'GENT on an obsidian engine
 ```
 
 > “Every problem has a geometry. I like finding the shape before writing the solution.”
@@ -43,13 +55,38 @@ CURRENTLY   : building J S'GENT, an orbital AI system
 <summary><b>◈ Read the field notes</b></summary>
 <br />
 
-I build deliberate software: systems that stay clear under pressure, beautiful in their constraints, and generous to the people who use them. J S'GENT is the active orbit—an AI system shaped through engineering, mathematical curiosity, and unusually careful interaction design.
+I build deliberate software: systems that stay clear under pressure, beautiful in their constraints, and generous to the people who use them. J S'GENT is the active orbit—an AI system shaped through engineering, mathematical curiosity, and unusually careful interaction design. The black hole above is a small theorem: every number it swallows comes back as structure.
 
 ```math
 \operatorname{craft} = \frac{\operatorname{clarity} \times \operatorname{curiosity}}{\operatorname{complexity} - \operatorname{purpose}}
 ```
 
 </details>
+
+## Readings
+
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/jarlelauch/jarlelauch/main/assets/metrics.svg"
+    alt="Field readings: public signal from the past 14 days, refreshed daily."
+    width="100%"
+  />
+</p>
+
+<p align="center">
+  <sub>▤ Public signal, last 14 days · re-rendered nightly by GitHub Actions</sub>
+</p>
+
+## Constellation
+
+| body | orbit | signal |
+| :-- | :-- | :-- |
+| [**j-sgent**](https://github.com/jarlelauch/j-sgent) | J S'GENT Orbital AI System — a private, single-account intelligence | `python · live` |
+| [**jarlelauch**](https://github.com/jarlelauch/jarlelauch) | this profile — the event horizon itself | `readme · banner` |
+
+<p align="center">
+  <a href="https://github.com/jarlelauch?tab=repositories"><b>ENTER THE REPOSITORY ARCHIVE →</b></a>
+</p>
 
 ## Archive
 
@@ -60,16 +97,13 @@ I build deliberate software: systems that stay clear under pressure, beautiful i
 | `03 / interfaces` | minimal interfaces with unusually strong interaction design |
 | `04 / research` | models and mathematical side quests |
 
-<p align="center">
-  <a href="https://github.com/jarlelauch?tab=repositories"><b>ENTER THE REPOSITORY ARCHIVE →</b></a>
-</p>
-
 ## Stack
 
 <p align="center">
   <img src="https://img.shields.io/badge/PYTHON-0B0D12?style=for-the-badge&logo=python&logoColor=E9E4D9" alt="Python" />
   <img src="https://img.shields.io/badge/AGENTS-0B0D12?style=for-the-badge&logo=openai&logoColor=D6A657" alt="Agents" />
   <img src="https://img.shields.io/badge/SYSTEMS-0B0D12?style=for-the-badge&logo=github&logoColor=E9E4D9" alt="Systems" />
+  <img src="https://img.shields.io/badge/MEMORY-0B0D12?style=for-the-badge&labelColor=07070e&color=D6A657" alt="Memory" />
 </p>
 
 ```text
