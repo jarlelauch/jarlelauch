@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" role="img" aria-labelledby="wt wd">
+  <title id="wt">Gelombang pendulum — ilusi harmoni</title>
+  <desc id="wd">Delapan belas pendulum dengan periode sedikit berbeda berayun bersama, membentuk pola gelombang berjalan yang tampak hidup.</desc>
+  <defs>
+    <radialGradient id="wc" cx="50%" cy="50%" r="55%">
+      <stop offset="0" stop-color="#0b0d12"/><stop offset="1" stop-color="#04050a"/>
+    </radialGradient>
+    <filter id="wg" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style><![CDATA[
+    .bar { stroke: #d8c595; stroke-opacity: .12; }
+    .pend { transform-origin: 0px 30px; animation: swing 2s ease-in-out infinite; }
+    .p1{animation-delay:-0.00s}.p2{animation-delay:-0.12s}.p3{animation-delay:-0.24s}.p4{animation-delay:-0.36s}
+    .p5{animation-delay:-0.48s}.p6{animation-delay:-0.60s}.p7{animation-delay:-0.72s}.p8{animation-delay:-0.84s}
+    .p9{animation-delay:-0.96s}.p10{animation-delay:-1.08s}.p11{animation-delay:-1.20s}.p12{animation-delay:-1.32s}
+    .p13{animation-delay:-1.44s}.p14{animation-delay:-1.56s}.p15{animation-delay:-1.68s}.p16{animation-delay:-1.80s}
+    .p17{animation-delay:-1.92s}.p18{animation-delay:-0.06s}
+    @keyframes swing { 0%,100% { transform: rotate(-22deg); } 50% { transform: rotate(22deg); } }
+    .bob { filter: url(#wg); }
+  ]]></style>
+
+  <rect width="1200" height="300" rx="14" fill="url(#wc)"/>
+  <g class="bar">
+    <line x1="80" y1="30" x2="1120" y2="30"/>
+  </g>
+
+  <g>
+    <line class="pend p1" x1="80" y1="30" x2="80" y2="230" stroke="#e8b95c" stroke-opacity=".5" stroke-width="1"/>
+    <circle class="bob p1" cx="80" cy="235" r="6" fill="#f0dcb2"/>
+
+    <line class="pend p2" x1="140" y1="30" x2="140" y2="228" stroke="#c0487e" stroke-opacity=".5" stroke-width="1"/>
+    <circle class="bob p2" cx="140" cy="233" r="6" fill="#f0dcb2"/>
+
+    <line class="pend p3" x1="200" y1="30" x2="200" y2="226" stroke="#e8b95c" stroke-opacity=".5" stroke-width="1"/>
+    <circle class="bob p3" cx="200" cy="231" r="6" fill="#f0dcb2"/>
+
+    <line class="pend p4" x1="260" y1="30" x2="260" y2="224" stroke="#c0487e" stroke-opacity=".5" stroke-width="1"/>
+    <circle class="bob p4" cx="260" cy="229" r="6" fill="#f0dcb2"/>
+
+    <line class="pend p5" x1="320" y1="30" x2="320" y2="222" stroke="#e8b95c" stroke-opacity=".5" stroke-width="1"/>
+    <circle class="bob p5" cx="320" cy="227" r="6" fill="#f0dcb2"/>
+
+    <line class="pend p6" x1="380" y1="30" x2="380" y2="220" stroke="#c0487e" stroke-opacity=".5" stroke-width="1"/>
+    <circle class="bob p6" cx="380" cy="225" r="6" fill="#f0dcb2"/>
+
+    <line class="pend p7" x1="440" y1="30" x2="440" y2="218" stroke="#e8b95c" stroke-opacity=".5" stroke-width="1"/>
+    <circle class="bob p7" cx="440" cy="223" r="6" fill="#f0dcb2"/>
+
+    <line class="pend p8" x1="500" y1="30" x2="500" y2="216" stroke="#c0487e" stroke-opacity=".5" stroke-width="1"/>
+    <circle class="bob p8" cx="500" cy="221" r="6" fill="#f0dcb2"/>
+
+    <line class="pend p9" x1="560" y1="30" x2="560" y2="214" stroke="#e8b95c" stroke-opacity=".5" stroke-width="1"/>
+    <circle class="bob p9" cx="560" cy="219" r="6" fill="#f0dcb2"/>
+
+    <line class="pend p10" x1="620" y1="30" x2="620" y2="212" stroke="#c0487e" stroke-opacity=".5" stroke-width="1"/>
+    <circle class="bob p10" cx="620" cy="217" r="6" fill="#f0dcb2"/>
+
+    <line class="pend p11" x1="680" y1="30" x2="680" y2="210" stroke="#e8b95c" stroke-opacity=".5" stroke-width="1"/>
+    <circle class="bob p11" cx="680" cy="215" r="6" fill="#f0dcb2"/>
+
+    <line class="pend p12" x1="740" y1="30" x2="740" y2="208" stroke="#c0487e" stroke-opacity=".5" stroke-width="1"/>
+    <circle class="bob p12" cx="740" cy="213" r="6" fill="#f0dcb2"/>
+
+    <line class="pend p13" x1="800" y1="30" x2="800" y2="206" stroke="#e8b95c" stroke-opacity=".5" stroke-width="1"/>
+    <circle class="bob p13" cx="800" cy="211" r="6" fill="#f0dcb2"/>
+
+    <line class="pend p14" x1="860" y1="30" x2="860" y2="204" stroke="#c0487e" stroke-opacity=".5" stroke-width="1"/>
+    <circle class="bob p14" cx="860" cy="209" r="6" fill="#f0dcb2"/>
+
+    <line class="pend p15" x1="920" y1="30" x2="920" y2="202" stroke="#e8b95c" stroke-opacity=".5" stroke-width="1"/>
+    <circle class="bob p15" cx="920" cy="207" r="6" fill="#f0dcb2"/>
+
+    <line class="pend p16" x1="980" y1="30" x2="980" y2="200" stroke="#c0487e" stroke-opacity=".5" stroke-width="1"/>
+    <circle class="bob p16" cx="980" cy="205" r="6" fill="#f0dcb2"/>
+
+    <line class="pend p17" x1="1040" y1="30" x2="1040" y2="198" stroke="#e8b95c" stroke-opacity=".5" stroke-width="1"/>
+    <circle class="bob p17" cx="1040" cy="203" r="6" fill="#f0dcb2"/>
+
+    <line class="pend p18" x1="1100" y1="30" x2="1100" y2="196" stroke="#c0487e" stroke-opacity=".5" stroke-width="1"/>
+    <circle class="bob p18" cx="1100" cy="201" r="6" fill="#f0dcb2"/>
+  </g>
+
+  <g font-family="Arial,Helvetica,sans-serif" letter-spacing="4" font-size="9">
+    <text x="36" y="286" fill="#e3d2a6" opacity=".55">GELOMBANG PENDULUM / ILUSI HARMONI</text>
+    <text x="1164" y="286" text-anchor="end" fill="#c0487e" opacity=".85">18 PENDULUM · 18 PERIODE · 1 POLA YANG BERUBAH</text>
+    <text x="600" y="270" text-anchor="middle" fill="#e8b95c" opacity=".8">TIAP BATANG PUNYA WAKTUNYA SENDIRI</text>
+    <text x="600" y="286" text-anchor="middle" fill="#c0487e" opacity=".6">BERSAMA MEREKA MENULIS KURVA YANG TIDAK PERNAH SAMA</text>
+  </g>
+</svg>

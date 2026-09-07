@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" role="img" aria-labelledby="st sd">
+  <title id="st">Spirograf — renda hipotikroid</title>
+  <desc id="sd">Tiga kurva hipotikroid berputar dengan rasio jari-jari berbeda, membentuk renda parametrik yang saling mengunci.</desc>
+  <defs>
+    <radialGradient id="sc" cx="50%" cy="50%" r="55%">
+      <stop offset="0" stop-color="#0b0d12"/><stop offset="1" stop-color="#04050a"/>
+    </radialGradient>
+    <filter id="sg" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="1.6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style><![CDATA[
+    .spin { fill: none; stroke-dasharray: 4 6; animation: smarch 30s linear infinite; }
+    .spin.b { animation-duration: 40s; animation-direction: reverse; }
+    .spin.c { animation-duration: 52s; }
+    @keyframes smarch { to { stroke-dashoffset: -1200; } }
+    .core { animation: cpulse 4s ease-in-out infinite; transform-origin: 600px 215px; }
+    @keyframes cpulse { 0%,100% { opacity: .4; transform: scale(.9);} 50% { opacity: .9; transform: scale(1.1);} }
+  ]]></style>
+
+  <rect width="1200" height="430" rx="14" fill="url(#sc)"/>
+
+  <g class="core" fill="none" stroke="#e8b95c" stroke-opacity=".5" stroke-width="1" stroke-dasharray="2 8">
+    <circle cx="600" cy="215" r="150"/>
+  </g>
+
+  <g class="spin" fill="none" stroke="#e8b95c" stroke-width="1.3" stroke-opacity=".85" filter="url(#sg)">
+    <path d="M600 65C712 65 800 128 800 215C800 302 712 365 600 365C488 365 400 302 400 215C400 128 488 65 600 65C678 65 748 102 780 160C812 218 800 288 748 328C696 368 620 368 568 328C516 288 504 218 536 160C568 102 638 65 716 65C762 65 800 102 800 150C800 198 762 235 714 235C666 235 628 198 628 150C628 102 666 65 714 65"/>
+  </g>
+  <g class="spin b" fill="none" stroke="#c0487e" stroke-width="1.2" stroke-opacity=".8" filter="url(#sg)">
+    <path d="M600 80C696 80 772 140 772 215C772 290 696 350 600 350C504 350 428 290 428 215C428 140 504 80 600 80C664 80 720 112 744 165C768 218 756 280 712 312C668 344 604 344 560 312C516 280 504 218 528 165C552 112 608 80 672 80C712 80 744 112 744 152C744 192 712 224 672 224C632 224 600 192 600 152C600 112 632 80 672 80"/>
+  </g>
+  <g class="spin c" fill="none" stroke="#f0dcb2" stroke-width="1" stroke-opacity=".7" filter="url(#sg)">
+    <path d="M600 100C680 100 744 154 744 215C744 276 680 330 600 330C520 330 456 276 456 215C456 154 520 100 600 100C652 100 696 128 716 172C736 216 724 268 688 296C652 324 600 324 564 296C528 268 516 216 536 172C556 128 600 100 652 100C684 100 710 126 710 158C710 190 684 216 652 216C620 216 594 190 594 158C594 126 620 100 652 100"/>
+  </g>
+
+  <g font-family="Arial,Helvetica,sans-serif" letter-spacing="4" font-size="9">
+    <text x="36" y="30" fill="#e3d2a6" opacity=".55">SPIROGRAF / RENDA HIPOTIKROID</text>
+    <text x="1164" y="30" text-anchor="end" fill="#c0487e" opacity=".85">x = (R-r)cos t + d cos((R-r)t/r)</text>
+    <text x="600" y="392" text-anchor="middle" fill="#e8b95c" opacity=".8">TIGA RATIO · SATU PUSAT · RIBUAN TITIK BERSINGGUNGAN</text>
+    <text x="600" y="408" text-anchor="middle" fill="#c0487e" opacity=".6">KETIKA LINGKARAN BERDIKAR DI DALAM LINGKARAN, RENDA TERLAHIR</text>
+  </g>
+</svg>

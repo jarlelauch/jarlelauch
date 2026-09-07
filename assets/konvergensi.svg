@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" role="img" aria-labelledby="kt kd">
+  <title id="kt">Mesin konvergensi — dekomposisi Fourier</title>
+  <desc id="kd">Enam lengan berputar dengan periode harmonik menjumlahkan satu kurva: setiap lingkaran adalah suku dari deret Fourier.</desc>
+  <defs>
+    <radialGradient id="kc" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#0b0d12"/><stop offset="1" stop-color="#04050a"/>
+    </radialGradient>
+    <filter id="kg" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="2.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style><![CDATA[
+    .arm { transform-origin: 0px 0px; animation: rot linear infinite; }
+    .a1 { animation-duration: 8s; }
+    .a2 { animation-duration: 4s; animation-direction: reverse; }
+    .a3 { animation-duration: 2.67s; }
+    .a4 { animation-duration: 2s; animation-direction: reverse; }
+    .a5 { animation-duration: 1.6s; }
+    .a6 { animation-duration: 1.33s; animation-direction: reverse; }
+    @keyframes rot { to { transform: rotate(360deg); } }
+    .pulse { transform-origin: 0px 0px; animation: pu 2.4s ease-out infinite; }
+    .pulse.b { animation-delay: -1.2s; }
+    @keyframes pu { 0% { transform: scale(1); opacity: .9; } 100% { transform: scale(7); opacity: 0; } }
+    .sta { animation: st 2.4s ease-in-out infinite alternate; }
+    .sta.b { animation-delay: -.8s; } .sta.c { animation-delay: -1.6s; }
+    @keyframes st { from { opacity: .15; } to { opacity: 1; } }
+  ]]></style>
+
+  <rect width="1200" height="430" rx="14" fill="url(#kc)"/>
+
+  <g stroke="#d8c595" stroke-opacity=".06" stroke-width="1">
+    <path d="M0 60H1200M0 120H1200M0 180H1200M0 240H1200M0 300H1200M0 360H1200"/>
+    <path d="M100 0V430M200 0V430M300 0V430M400 0V430M500 0V430M600 0V430M700 0V430M800 0V430M900 0V430M1000 0V430M1100 0V430"/>
+  </g>
+  <path d="M40 215H1160M600 35V395" stroke="#c0487e" stroke-opacity=".18" stroke-width="1" stroke-dasharray="2 6"/>
+
+  <g fill="#f1d9a0">
+    <circle class="sta" cx="70" cy="50" r="1.1"/><circle class="sta b" cx="220" cy="380" r=".9"/><circle class="sta c" cx="390" cy="40" r="1"/>
+    <circle class="sta b" cx="900" cy="44" r="1"/><circle class="sta c" cx="1100" cy="370" r=".9"/><circle class="sta" cx="1130" cy="90" r=".8"/>
+  </g>
+
+  <g transform="translate(600 215)">
+    <circle r="6" fill="#0b0d12" stroke="#e8b95c" stroke-width="1.4"/>
+    <circle r="2" fill="#ffe3a0" filter="url(#kg)"/>
+
+    <g class="arm a1">
+      <path d="M0 0 H80" fill="none" stroke="#e8b95c" stroke-width="1.4" stroke-opacity=".8"/>
+      <circle cx="80" cy="0" r="2.6" fill="#f0dcb2"/>
+      <circle r="1.6" fill="#c0487e"/>
+      <g transform="translate(80 0)">
+        <g class="arm a2">
+          <path d="M0 0 H40" fill="none" stroke="#c0487e" stroke-width="1.3" stroke-opacity=".8"/>
+          <circle cx="40" cy="0" r="2.4" fill="#f0dcb2"/>
+          <circle r="1.4" fill="#e8b95c"/>
+          <g transform="translate(40 0)">
+            <g class="arm a3">
+              <path d="M0 0 H26" fill="none" stroke="#e8b95c" stroke-width="1.2" stroke-opacity=".8"/>
+              <circle cx="26" cy="0" r="2.2" fill="#f0dcb2"/>
+              <circle r="1.3" fill="#c0487e"/>
+              <g transform="translate(26 0)">
+                <g class="arm a4">
+                  <path d="M0 0 H18" fill="none" stroke="#c0487e" stroke-width="1.1" stroke-opacity=".8"/>
+                  <circle cx="18" cy="0" r="2" fill="#f0dcb2"/>
+                  <circle r="1.2" fill="#e8b95c"/>
+                  <g transform="translate(18 0)">
+                    <g class="arm a5">
+                      <path d="M0 0 H13" fill="none" stroke="#e8b95c" stroke-width="1" stroke-opacity=".8"/>
+                      <circle cx="13" cy="0" r="1.8" fill="#f0dcb2"/>
+                      <circle r="1.1" fill="#c0487e"/>
+                      <g transform="translate(13 0)">
+                        <g class="arm a6">
+                          <path d="M0 0 H11" fill="none" stroke="#c0487e" stroke-width="1" stroke-opacity=".8"/>
+                          <circle cx="11" cy="0" r="1.6" fill="#f0dcb2"/>
+                          <circle r="1" fill="#e8b95c"/>
+                          <g transform="translate(11 0)">
+                            <circle r="5" fill="#ffe3a0" filter="url(#kg)"/>
+                            <circle class="pulse" r="4" fill="none" stroke="#f2c47c" stroke-width="1.4"/>
+                            <circle class="pulse b" r="4" fill="none" stroke="#c0487e" stroke-width="1.2"/>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <g font-family="Arial,Helvetica,sans-serif" letter-spacing="4" font-size="9">
+    <text x="36" y="30" fill="#e3d2a6" opacity=".55">KONVERGENSI / MESIN EPISIKEL</text>
+    <text x="1164" y="30" text-anchor="end" fill="#c0487e" opacity=".85">f(t) = Σ aₙ · e^{in·t}</text>
+    <text x="600" y="392" text-anchor="middle" fill="#e8b95c" opacity=".8">SETIAP KURVA ADALAH JUMLAH DARI BANYAK LINGKARAN</text>
+    <text x="600" y="408" text-anchor="middle" fill="#c0487e" opacity=".6">ENAM HARMONIK · SATU JALAN KEMBALI KE TITIK ASAL</text>
+  </g>
+</svg>
