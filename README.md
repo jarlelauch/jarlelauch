@@ -19,6 +19,8 @@
   ·
   <a href="#constellation">✦ CONSTELLATION</a>
   ·
+  <a href="#notes">✎ NOTES</a>
+  ·
   <a href="#archive">△ ARCHIVE</a>
   ·
   <a href="#stack">⌘ STACK</a>
@@ -75,6 +77,84 @@ I build deliberate software: systems that stay clear under pressure, beautiful i
 
 <p align="center">
   <sub>▤ Public signal, last 14 days · re-rendered nightly by GitHub Actions</sub>
+</p>
+
+## Mathematical Notes
+
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/jarlelauch/jarlelauch/main/assets/notes.svg"
+    alt="Minimal field notes board: geometry, sequence, continuity and duality."
+    width="100%"
+  />
+</p>
+
+<details open>
+<summary><b>✎ 01 · geometry — the circle as a constraint</b></summary>
+<br />
+
+A circle is the shortest boundary that isolates distance. Every interface I build describes a constraint first, then the freedom inside it.
+
+```math
+x^2 + y^2 = r^2
+```
+
+The perimeter grows linearly with radius; the area quadratically. Systems behave the same: interfaces scale slower than the problems they contain.
+
+```math
+C = 2\pi r, \quad A = \pi r^2
+```
+
+</details>
+
+<details>
+<summary><b>✎ 02 · sequences — recursion as control flow</b></summary>
+<br />
+
+Recursion is how structure persists without being restated. The golden ratio is the fixed point of the most economical recursion.
+
+```math
+\varphi = \frac{1 + \sqrt{5}}{2}, \qquad \varphi = 1 + \frac{1}{\varphi}
+```
+
+```math
+F_{n} = F_{n-1} + F_{n-2}
+```
+
+Good agent memory behaves the same way: the next state is a function of the last state, never a copy of the whole past.
+
+</details>
+
+<details>
+<summary><b>✎ 03 · continuity — growth without catastrophe</b></summary>
+<br />
+
+Euler's constant emerges from a discrete process taken to its limit. Modern systems are the same: many small, careful steps compound into something smooth.
+
+```math
+e = \lim_{n \to \infty} \left( 1 + \frac{1}{n} \right)^{n}
+```
+
+```math
+\frac{d}{dt} e^{kt} = k \, e^{kt}
+```
+
+</details>
+
+<details>
+<summary><b>✎ 04 · duality — one line, all constants</b></summary>
+<br />
+
+Euler's identity gathers geometry, growth, nothingness and unity into a single relation. It is the aesthetic target: maximum meaning, minimum syntax.
+
+```math
+e^{i\pi} + 1 = 0
+```
+
+</details>
+
+<p align="center">
+  <sub>✎ Field notes · minimal · modern · rendered by GitHub MathJax</sub>
 </p>
 
 ## Constellation

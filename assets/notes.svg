@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 470" role="img" aria-labelledby="t d">
+  <title id="t">Mathematical notes — minimal field notes</title>
+  <desc id="d">A minimal modern board of drifting mathematical notes on a dark grid, with a central theorem and orbiting equations.</desc>
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#08080f"/><stop offset=".5" stop-color="#0c0a15"/><stop offset="1" stop-color="#06060b"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e7d5ae" stop-opacity="0"/>
+      <stop offset=".35" stop-color="#e7d5ae" stop-opacity=".8"/>
+      <stop offset=".68" stop-color="#c0487e" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#c0487e" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft2" x="-90%" y="-90%" width="280%" height="280%"><feGaussianBlur stdDeviation="14"/></filter>
+    <pattern id="gg" width="26" height="26" patternUnits="userSpaceOnUse">
+      <path d="M26 0H0V26" fill="none" stroke="#8f7a4d" stroke-opacity=".05" stroke-width=".5"/>
+    </pattern>
+    <style><![CDATA[
+      .card { fill:#0a0912; stroke:#c9b06a; stroke-opacity:.42; }
+      .main { font-family: Georgia,'Times New Roman',serif; fill:#f0dcb2; letter-spacing:.06em; }
+      .sub { font-family: Georgia,'Times New Roman',serif; fill:#c9b06a; }
+      .dim { font-family: Arial,Helvetica,sans-serif; fill:#8f849b; letter-spacing:4px; font-size:9px; }
+      .float1 { animation: f1 7s ease-in-out infinite; }
+      .float2 { animation: f2 9s ease-in-out infinite; }
+      .float3 { animation: f3 11s ease-in-out infinite; }
+      .float4 { animation: f4 6s ease-in-out infinite; }
+      .pulse { animation: pl 5s ease-in-out infinite; transform-origin:600px 200px; }
+      .edge { stroke-dasharray:2 9; animation: ed 3s linear infinite; }
+      @keyframes f1 { 0%,100% { opacity:.55; transform:translateY(0) } 50% { opacity:1; transform:translateY(-3px) } }
+      @keyframes f2 { 0%,100% { opacity:.5; transform:translateY(0) } 50% { opacity:.94; transform:translateY(4px) } }
+      @keyframes f3 { 0%,100% { opacity:.45; transform:translateY(0) } 50% { opacity:.9; transform:translateY(-5px) } }
+      @keyframes f4 { 0%,100% { opacity:.6; transform:translateY(0) } 50% { opacity:1; transform:translateY(3px) } }
+      @keyframes pl { 0%,100% { opacity:.5 } 50% { opacity:1 } }
+      @keyframes ed { to { stroke-dashoffset:-88; } }
+    ]]></style>
+  </defs>
+
+  <rect width="1200" height="470" rx="16" fill="url(#bg2)"/>
+  <rect width="1200" height="470" rx="16" fill="url(#gg)"/>
+  <path d="M40 126H1160M40 350H1160" stroke="url(#line)" stroke-width="1" opacity=".5"/>
+  <path d="M250 70V400M890 70V400" class="edge" stroke="#c9b06a" stroke-opacity=".28" stroke-width="1" fill="none"/>
+
+  <g class="card" stroke-width="1.1">
+    <rect x="44" y="146" width="248" height="210" rx="8"/>
+    <rect x="326" y="146" width="232" height="210" rx="8"/>
+    <rect x="592" y="146" width="264" height="210" rx="8"/>
+    <rect x="890" y="146" width="262" height="210" rx="8"/>
+  </g>
+  <g fill="none" stroke="#e0a94f" stroke-width="1" stroke-opacity=".55">
+    <rect x="44" y="146" width="248" height="210" rx="8" filter="url(#soft2)"/>
+  </g>
+
+  <circle cx="600" cy="200" r="120" fill="none" stroke="#c0487e" stroke-opacity=".2" class="pulse"/>
+  <circle cx="600" cy="200" r="150" fill="none" stroke="#c9b06a" stroke-opacity=".25" stroke-dasharray="3 16" class="edge"/>
+
+  <g class="float1">
+    <text x="78" y="176" class="sub" font-size="13">01 · geometry</text>
+    <text x="78" y="224" class="main" font-size="22">x² + y² = r²</text>
+    <text x="78" y="252" class="sub" font-size="12">circle as constraint</text>
+    <path d="M78 298h156" stroke="#c9b06a" stroke-opacity=".5" stroke-width=".8"/>
+    <text x="78" y="322" class="dim">EVERY BOUNDARY A CHOICE</text>
+  </g>
+
+  <g class="float2">
+    <text x="352" y="176" class="sub" font-size="13">02 · sequence</text>
+    <text x="352" y="224" class="main" font-size="20">φ = (1+√5)/2</text>
+    <text x="352" y="252" class="sub" font-size="12">golden recursion</text>
+    <path d="M352 298h164" stroke="#c9b06a" stroke-opacity=".5" stroke-width=".8"/>
+    <text x="352" y="322" class="dim">ORDER FROM REPETITION</text>
+  </g>
+
+  <g class="float3">
+    <text x="620" y="176" class="sub" font-size="13">03 · continuity</text>
+    <text x="620" y="216" class="main" font-size="17">lim  (1+1/n)ⁿ  = e</text>
+    <text x="620" y="246" class="sub" font-size="12">compounding limit</text>
+    <path d="M620 298h204" stroke="#c9b06a" stroke-opacity=".5" stroke-width=".8"/>
+    <text x="620" y="322" class="dim">GROWTH WITHOUT CATASTROPHE</text>
+  </g>
+
+  <g class="float4">
+    <text x="918" y="176" class="sub" font-size="13">04 · duality</text>
+    <text x="918" y="224" class="main" font-size="22">eⁱᵖ + 1 = 0</text>
+    <text x="918" y="252" class="sub" font-size="12">all constants, one line</text>
+    <path d="M918 298h204" stroke="#c9b06a" stroke-opacity=".5" stroke-width=".8"/>
+    <text x="918" y="322" class="dim">THE DEEP RELATIONSHIP</text>
+  </g>
+
+  <g class="float4">
+    <text x="76" y="52" class="sub" font-size="14">∫ 0 1</text>
+    <text x="600" y="60" class="sub" font-size="14" text-anchor="middle">∂/∂t</text>
+    <text x="1124" y="52" class="sub" font-size="14" text-anchor="end">Σ n=1</text>
+    <text x="76" y="420" class="dim">FIELD NOTES · minimal · modern</text>
+    <text x="1124" y="420" class="dim" text-anchor="end">NOISE IS DATA IN DISGUISE</text>
+  </g>
+
+  <text x="600" y="440" class="dim" text-anchor="middle">STRUCTURE ARRANGES SCATTERED NUMBERS INTO MEANING</text>
+</svg>
