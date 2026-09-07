@@ -116,6 +116,18 @@ hover the glyphs; each flares in gold or magenta when touched.
 <p align="center">
   <img
     src="https://raw.githubusercontent.com/jarlelauch/jarlelauch/main/assets/pendulumwave.svg"
+
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/jarlelauch/jarlelauch/main/assets/naga.svg"
+    alt="Naga matematika minimalis: gerakkan kursor untuk berinteraksi; dari ekornya keluar rumus dan angka acak."
+    width="100%"
+  />
+</p>
+
+<p align="center">
+  <sub>◄ Gerakkan kursor · naga mengikuti · ekor menuliskan rumus tanpa henti.</sub>
+</p>
     alt="Gelombang pendulum: delapan belas pendulum berayun membentuk ilusi gelombang."
     width="100%"
   />
