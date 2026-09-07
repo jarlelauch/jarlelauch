@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 540" role="img" aria-labelledby="ot od">
+  <title id="ot">Orbital system — J S'GENT</title>
+  <desc id="od">A technical orbital diagram: four subsystems in stable elliptical orbit around a single kernel, drawn as a minimalist blueprint.</desc>
+  <defs>
+    <radialGradient id="coreHalo" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#d3932c" stop-opacity=".5"/>
+      <stop offset=".55" stop-color="#c0487e" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#c0487e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="coreG">
+      <stop offset="0" stop-color="#000"/>
+      <stop offset=".7" stop-color="#010108"/>
+      <stop offset=".92" stop-color="#261226"/>
+      <stop offset="1" stop-color="#d3912c"/>
+    </radialGradient>
+    <pattern id="dg" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="13" cy="13" r=".8" fill="#e7d5ae" opacity=".05"/>
+    </pattern>
+    <filter id="gl" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="2.8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style><![CDATA[
+    .orb1 { stroke-dasharray: 3 9;  animation: march1 9s  linear infinite; }
+    .orb2 { stroke-dasharray: 1 7;  animation: march1 14s linear infinite reverse; }
+    .orb3 { stroke-dasharray: 40 14 4 14; animation: march1 20s linear infinite; }
+    .orb4 { stroke-dasharray: 2 12; animation: march1 30s linear infinite reverse; }
+    @keyframes march1 { to { stroke-dashoffset: -420; } }
+    .pulse { animation: heartbeat 3.2s cubic-bezier(.75,0,.25,1) infinite; transform-origin: 600px 290px; }
+    @keyframes heartbeat { 0%,100% { opacity: .5; transform: scale(.94); } 45% { opacity: 1; transform: scale(1.06); } }
+    .halo { animation: halo 6s ease-in-out infinite; transform-origin: 600px 290px; }
+    @keyframes halo { 0%,100% { opacity: .5; transform: scale(.96); } 50% { opacity: .85; transform: scale(1.05); } }
+    .leader { stroke-dasharray: 3 5; animation: lead 8s linear infinite; }
+    @keyframes lead { to { stroke-dashoffset: -160; } }
+  ]]></style>
+
+  <rect width="1200" height="540" rx="16" fill="#07070e"/>
+  <rect width="1200" height="540" rx="16" fill="url(#dg)"/>
+
+  <g fill="none" stroke="#e7d4a2" stroke-opacity=".4" stroke-width="1">
+    <path d="M36 34h72m-72 0v14m72-14v14M1092 506h72m-72 0v-14m72 14v-14"/>
+    <path d="M36 506v-14m0 14h72M1164 34v14m0-14h-72"/>
+  </g>
+
+  <text x="36" y="40" font-family="Georgia, serif" font-size="15" letter-spacing="2" fill="#e8b95c">FIG. 01 — ORBITAL SYSTEM / J S'GENT</text>
+  <text x="1164" y="40" text-anchor="end" font-family="Georgia, serif" font-size="9" letter-spacing="3" fill="#c0487e" opacity=".9">ORDER AROUND THE SINGULARITY</text>
+
+  <path id="o1" class="orb1" d="M750 290A150 63 0 1 0 450 290A150 63 0 1 0 750 290" fill="none" stroke="#e8b95c" stroke-opacity=".5" stroke-width="1"/>
+  <path id="o2" class="orb2" d="M840 290A240 101 0 1 0 360 290A240 101 0 1 0 840 290" fill="none" stroke="#c0487e" stroke-opacity=".45" stroke-width="1"/>
+  <path id="o3" class="orb3" d="M930 290A330 139 0 1 0 270 290A330 139 0 1 0 930 290" fill="none" stroke="#e8b95c" stroke-opacity=".5" stroke-width="1"/>
+  <path id="o4" class="orb4" d="M1020 290A420 176 0 1 0 180 290A420 176 0 1 0 1020 290" fill="none" stroke="#c0487e" stroke-opacity=".35" stroke-width="1"/>
+
+  <g font-family="Georgia, serif" font-style="italic" font-size="8" fill="#e7d5ae" opacity=".5">
+    <text x="444" y="282" text-anchor="end">i = 53°</text>
+    <text x="264" y="282" text-anchor="end">i = 28°</text>
+    <text x="1026" y="282">i = 12°</text>
+  </g>
+
+  <g class="halo"><circle cx="600" cy="290" r="74" fill="url(#coreHalo)"/></g>
+  <circle cx="600" cy="290" r="44" fill="url(#coreG)" stroke="#e8b95c" stroke-opacity=".6" stroke-width="1"/>
+  <circle cx="600" cy="290" r="30" fill="#000"/>
+  <circle class="pulse" cx="600" cy="290" r="58" fill="none" stroke="#c0487e" stroke-opacity=".6" stroke-width="1" stroke-dasharray="2 8"/>
+  <path d="M585 290H615M600 275V305" stroke="#e8b95c" stroke-opacity=".55" stroke-width=".7"/>
+  <circle cx="600" cy="290" r="3" fill="#f0c070" filter="url(#gl)"/>
+  <text x="600" y="374" text-anchor="middle" font-family="Georgia, serif" font-size="11" letter-spacing="4" fill="#e8b95c">KERNEL</text>
+
+  <g><circle r="3.2" fill="#f0c070" filter="url(#gl)"/><animateMotion dur="9s" repeatCount="indefinite" rotate="0"><mpath xlink:href="#o1" href="#o1"/></animateMotion></g>
+  <g><circle r="1.8" fill="#f0c070" opacity=".5"/><animateMotion dur="9s" begin="0.45s" repeatCount="indefinite" rotate="0"><mpath xlink:href="#o1" href="#o1"/></animateMotion></g>
+  <g><circle r="2.8" fill="#d06ba3" filter="url(#gl)"/><animateMotion dur="14s" repeatCount="indefinite" rotate="0" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath xlink:href="#o2" href="#o2"/></animateMotion></g>
+  <g><circle r="3.2" fill="#f0c070" filter="url(#gl)"/><animateMotion dur="20s" repeatCount="indefinite" rotate="0"><mpath xlink:href="#o3" href="#o3"/></animateMotion></g>
+  <g><circle r="1.8" fill="#f0c070" opacity=".5"/><animateMotion dur="20s" begin="0.8s" repeatCount="indefinite" rotate="0"><mpath xlink:href="#o3" href="#o3"/></animateMotion></g>
+  <g><circle r="2.4" fill="#d06ba3" filter="url(#gl)"/><animateMotion dur="30s" repeatCount="indefinite" rotate="0" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath xlink:href="#o4" href="#o4"/></animateMotion></g>
+
+  <g class="leader" fill="none" stroke-width="1">
+    <path d="M754 286L812 240" stroke="#e8b95c" stroke-opacity=".45"/>
+    <path d="M346 294L288 340" stroke="#c0487e" stroke-opacity=".45"/>
+    <path d="M934 294L992 340" stroke="#e8b95c" stroke-opacity=".45"/>
+    <path d="M176 294L118 340" stroke="#c0487e" stroke-opacity=".45"/>
+  </g>
+  <g font-family="Georgia, serif" font-size="10" letter-spacing="2">
+    <text x="818" y="236" fill="#e8b95c">MEMORY · L1</text>
+    <text x="282" y="344" text-anchor="end" fill="#d06ba3">AGENTS · L2</text>
+    <text x="998" y="344" fill="#e8b95c">INTERFACE · L3</text>
+    <text x="112" y="344" text-anchor="end" fill="#d06ba3">MATH · L4</text>
+  </g>
+
+  <text x="36" y="506" font-family="Georgia, serif" font-size="8" letter-spacing="2" fill="#e7d5ae" opacity=".5">— TRAJECTORY&#160;&#160;● NODE&#160;&#160;◎ KERNEL</text>
+  <text x="600" y="506" text-anchor="middle" font-family="Georgia, serif" font-size="9" letter-spacing="3" fill="#e7d5ae" opacity=".55">SUBSYSTEMS IN STABLE ORBIT · Δv RESERVED FOR WONDER</text>
+  <text x="1164" y="506" text-anchor="end" font-family="Georgia, serif" font-size="8" letter-spacing="2" fill="#c0487e" opacity=".7">TRACKING NOMINAL</text>
+</svg>

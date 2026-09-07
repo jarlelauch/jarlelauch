@@ -44,6 +44,10 @@
   <img src="https://img.shields.io/github/languages/top/jarlelauch/j-sgent?style=for-the-badge&logo=python&labelColor=07070e&color=e8b95c" alt="j-sgent top language" />
 </p>
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/jarlelauch/jarlelauch/main/assets/divider.svg" alt="" width="100%" />
+</p>
+
 ## Orbital Engine
 
 <p align="center">
@@ -73,6 +77,25 @@ hover the glyphs; each flares in gold or magenta when touched.
 <p align="center">
   <sub>◎ Numbers in motion, always in relation · pure SVG, no JavaScript</sub>
 </p>
+
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/jarlelauch/jarlelauch/main/assets/orbit-system.svg"
+    alt="System map: memory, agents, interface and math in stable elliptical orbit around the kernel."
+    width="100%"
+  />
+</p>
+
+<p align="center">
+  <sub>◉ FIG. 01 — subsystem map · the kernel holds; the system orbits.</sub>
+</p>
+
+| subsystem | orbit | function |
+| :-- | :-- | :-- |
+| `MEMORY · L1` | inner | context, recall, identity |
+| `AGENTS · L2` | mid | planning, tool use, execution |
+| `INTERFACE · L3` | outer | human surface, minimal by law |
+| `MATH · L4` | halo | invariants, proofs, taste |
 
 ---
 
@@ -217,6 +240,22 @@ e^{i\pi} + 1 = 0
   <sub>✎ Field notes · minimal · modern · rendered by GitHub MathJax</sub>
 </p>
 
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/jarlelauch/jarlelauch/main/assets/math-strip.svg"
+    alt="A strip of five theorems: Euler identity, Faraday law, Boltzmann entropy, the golden ratio, and Einstein field equations."
+    width="100%"
+  />
+</p>
+
+<p align="center">
+  <sub>∫ Five theorems I keep near the kernel.</sub>
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/jarlelauch/jarlelauch/main/assets/divider.svg" alt="" width="100%" />
+</p>
+
 ## Constellation
 
 | body | orbit | signal |
@@ -261,5 +300,9 @@ The profile keeps the visible stack intentionally compact. Add a technology only
 </details>
 
 <p align="center">
-  <sub>THE SINGULARITY IS NOT THE END. IT IS A CHANGE OF COORDINATES.</sub>
+  <img
+    src="https://raw.githubusercontent.com/jarlelauch/jarlelauch/main/assets/footer.svg"
+    alt="A black hole setting on the horizon: the singularity is not the end, it is a change of coordinates."
+    width="100%"
+  />
 </p>

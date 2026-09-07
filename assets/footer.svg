@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" role="img" aria-labelledby="ft fd">
+  <title id="ft">Event horizon at dusk</title>
+  <desc id="fd">A black hole setting on a perspective grid horizon with a passing satellite and the closing coordinates.</desc>
+  <defs>
+    <radialGradient id="dusk" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#e8b95c" stop-opacity=".55"/>
+      <stop offset=".6" stop-color="#c0487e" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#c0487e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hgrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e8b95c" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#e8b95c" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#e8b95c" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="goldD" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbe6ab"/><stop offset=".5" stop-color="#d3932c"/><stop offset="1" stop-color="#9c2f52"/>
+    </linearGradient>
+    <clipPath id="above"><rect x="0" y="0" width="1200" height="150"/></clipPath>
+  </defs>
+  <style><![CDATA[
+    .breath { animation: dusk 6s ease-in-out infinite; transform-origin: 600px 150px; }
+    @keyframes dusk { 0%,100% { opacity: .3; transform: scale(.95); } 50% { opacity: .65; transform: scale(1.06); } }
+    .shimmer { stroke-dasharray: 90 60; animation: shim 14s linear infinite; }
+    @keyframes shim { to { stroke-dashoffset: -600; } }
+    .tw { animation: tw 2.6s ease-in-out infinite alternate; }
+    .tw.b { animation-delay: -.8s; } .tw.c { animation-delay: -1.6s; }
+    @keyframes tw { from { opacity: .15; } to { opacity: 1; } }
+  ]]></style>
+
+  <rect width="1200" height="240" rx="14" fill="#06060b"/>
+
+  <g fill="#f1d9a0">
+    <circle class="tw" cx="140" cy="60" r="1.2"/><circle class="tw b" cx="300" cy="34" r=".9"/>
+    <circle class="tw c" cx="930" cy="44" r="1.1"/><circle class="tw b" cx="1080" cy="84" r=".9"/>
+    <circle class="tw c" cx="480" cy="58" r=".8"/>
+  </g>
+
+  <ellipse class="breath" cx="600" cy="150" rx="95" ry="24" fill="url(#dusk)"/>
+
+  <g clip-path="url(#above)">
+    <circle cx="600" cy="150" r="58" fill="none" stroke="#e8b95c" stroke-opacity=".45" stroke-width="1"/>
+    <circle cx="600" cy="150" r="54" fill="#010104" stroke="url(#goldD)" stroke-width="2"/>
+    <circle cx="600" cy="150" r="40" fill="#000"/>
+  </g>
+
+  <path d="M600 152L150 238M600 152L330 238M600 152L480 238M600 152L720 238M600 152L870 238M600 152L1050 238" stroke="#e7d5ae" stroke-opacity=".07" stroke-width="1"/>
+  <path d="M60 160H1140" stroke="#e7d5ae" stroke-opacity=".12"/>
+  <path d="M60 172H1140" stroke="#e7d5ae" stroke-opacity=".1"/>
+  <path d="M60 188H1140" stroke="#e7d5ae" stroke-opacity=".08"/>
+  <path d="M60 208H1140" stroke="#e7d5ae" stroke-opacity=".06"/>
+  <path d="M60 232H1140" stroke="#e7d5ae" stroke-opacity=".05"/>
+  <path d="M60 150H1140" class="shimmer" fill="none" stroke="url(#hgrad)" stroke-width="1.2"/>
+
+  <path d="M654 146v8M716 146v8" stroke="#e7d5ae" stroke-opacity=".4"/>
+  <path d="M654 150H716" stroke="#e7d5ae" stroke-opacity=".4" stroke-dasharray="2 4"/>
+  <text x="724" y="153" font-family="Georgia, serif" font-size="9" fill="#e8b95c">r<tspan dy="3" font-size="7">s</tspan><tspan dy="-3" dx="8" fill="#e7d5ae" opacity=".55" font-size="8" letter-spacing="1">· EVENT HORIZON</tspan></text>
+
+  <g>
+    <circle r="2" fill="#f0c070"/>
+    <line x1="-10" y1="1" x2="-30" y2="2" stroke="#f0c070" stroke-opacity=".5" stroke-width=".8" stroke-linecap="round"/>
+    <animateMotion dur="15s" repeatCount="indefinite" rotate="0" path="M-40 92Q600 40 1240 78"/>
+  </g>
+  <g>
+    <circle r="1.2" fill="#f0c070" opacity=".6"/>
+    <animateMotion dur="15s" begin="0.3s" repeatCount="indefinite" rotate="0" path="M-40 92Q600 40 1240 78"/>
+  </g>
+
+  <text x="36" y="30" font-family="Georgia, serif" font-size="9" letter-spacing="3" fill="#e7d5ae" opacity=".5">COORDINATES / TEMPORARILY LOST</text>
+  <text x="1164" y="30" text-anchor="end" font-family="Georgia, serif" font-size="9" letter-spacing="2" fill="#c0487e" opacity=".8">FRAME ∞ · 01</text>
+  <text x="600" y="190" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="16" fill="#e8b95c">THE SINGULARITY IS NOT THE END.</text>
+  <text x="600" y="214" text-anchor="middle" font-family="Georgia, serif" font-size="10" letter-spacing="4" fill="#c0487e">IT IS A CHANGE OF COORDINATES</text>
+</svg>
