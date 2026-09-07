@@ -170,7 +170,7 @@ hover the glyphs; each flares in gold or magenta when touched.
 </p>
 
 <p align="center">
-  <a href="https://jarlelauch.github.io/jarlelauch/naga.html">◈ GERAKKAN NAGA DENGAN KURSOR &#8594; versi interaktif</a>
+  <a href="https://jarlelauch.github.io/jarlelauch/naga.html">◈ GERAKKAN NAGA DENGAN KURSOR &#8594; versi interaktif — bakar planet, kumpulkan skor, sesekali meteor</a>
 </p>
 
 ---

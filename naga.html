@@ -15,6 +15,7 @@
     text-align:center; pointer-events:none; white-space:nowrap;
   }
   #hud b { color:var(--gold); font-weight:700; }
+  #score { color:var(--cream); font-size:13px; vertical-align:baseline; }
   #hud .sub { color:#6a5b83; letter-spacing:2px; margin-top:4px; font-size:10px; }
   #hud.fade { opacity:.15; transition:opacity 2.4s ease; }
   a#back {
@@ -57,14 +58,20 @@
       <feGaussianBlur stdDeviation="3.4" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
+    <mask id="moonM">
+      <circle cx="1060" cy="84" r="30" fill="#fff"/>
+      <circle cx="1075" cy="72" r="27" fill="#000"/>
+    </mask>
   </defs>
 
   <rect width="1200" height="500" fill="#07070e"/>
   <ellipse id="aura" cx="600" cy="250" rx="560" ry="200" fill="url(#auraG)"/>
 
   <g id="stars"></g>
+  <circle id="moon" cx="1060" cy="84" r="30" fill="#ece2cc" opacity=".85" mask="url(#moonM)" filter="url(#glow)" aria-hidden="true"/>
   <g id="planets"></g>
   <g id="dust"></g>
+  <g id="comets"></g>
 
   <g id="bodyWrap">
     <path id="outBack" fill="none" stroke="#160812" stroke-width="28" stroke-linecap="round"/>
@@ -110,8 +117,8 @@
 </svg>
 
 <div id="hud">
-  <div>GERAKKAN <b>KURSOR</b> &#8212; NAGA MENGEJAR API &middot; <b>SPASI</b>/<b>TAHAN KLIK</b> &#8212; NAFAS API</div>
-  <div class="sub">jeda sebentar &#8656; naga berenang sendiri &middot; bakar planet yang melintas</div>
+  <div>GERAKKAN <b>KURSOR</b> &#8212; NAGA MENGEJAR API &middot; <b>SPASI</b>/<b>TAHAN KLIK</b> &#8212; NAFAS API &middot; SKOR <b id="score">0</b></div>
+  <div class="sub">jeda sebentar &#8656; naga berenang sendiri &middot; bakar planet yang melintas &middot; kadang meteor masuk orbit</div>
 </div>
 
 <script>
@@ -128,6 +135,8 @@
   var shine=document.getElementById("shine"),spikes=document.getElementById("spikes"),tf=document.getElementById("tailfin");
   var headG=document.getElementById("head"),aura=document.getElementById("aura");
   var fx=document.getElementById("fx");
+  var cometG=document.getElementById("comets");
+  var score=0,scoreEl=document.getElementById("score");
 
   SVG.addEventListener("mousemove",function(e){
     var ctm=SVG.getScreenCTM();if(!ctm)return;
@@ -208,6 +217,7 @@
   function bomb(P){
     if(!P.alive)return;
     P.alive=false;
+    score++;if(scoreEl)scoreEl.textContent=score;
     var bx=P.x,by=P.y;
     for(var b=0;b<14;b++){
       var ba=Math.random()*Math.PI*2,bs=1.4+Math.random()*2.6;
@@ -236,6 +246,36 @@
     dustG.appendChild(dc);
     dust.push({x:Math.random()*1200,y:Math.random()*500,v:0.15+Math.random()*0.4});
     dustE.push(dc);
+  }
+
+  function spawnComet(){
+    var sx=60+Math.random()*1100;
+    var sy=6+Math.random()*46;
+    var ang=0.32+Math.random()*0.22;
+    var sp=8+Math.random()*6;
+    var vcx=-Math.cos(ang)*sp, vcy=Math.sin(ang)*sp;
+    var life=64+Math.floor(Math.random()*46);
+    var head=el("circle",{"r":"2.4","fill":"#dce8ff",filter:"url(#glow)","opacity":"0.95","aria-hidden":"true"});
+    var trail=el("line",{"stroke":"#9fb8e8","stroke-width":"1.6","stroke-linecap":"round","opacity":"0","aria-hidden":"true"});
+    cometG.appendChild(head);cometG.appendChild(trail);
+    var age=0,dead=false;
+    (function cc(){
+      if(dead){if(head.parentNode)cometG.removeChild(head);if(trail.parentNode)cometG.removeChild(trail);return;}
+      age++;
+      var k=age/life;
+      var cx=sx+vcx*age, cy=sy+vcy*age;
+      head.setAttribute("cx",cx.toFixed(1));
+      head.setAttribute("cy",cy.toFixed(1));
+      var tl=Math.min(age*10,110);
+      trail.setAttribute("x1",cx.toFixed(1));
+      trail.setAttribute("y1",cy.toFixed(1));
+      trail.setAttribute("x2",(cx-vcx*tl).toFixed(1));
+      trail.setAttribute("y2",(cy-vcy*tl).toFixed(1));
+      trail.setAttribute("opacity",(0.55*(1-k)).toFixed(2));
+      if(age<life&&cx>-140&&cy<H+140){requestAnimationFrame(cc);return;}
+      dead=true;
+      if(head.parentNode)cometG.removeChild(head);if(trail.parentNode)cometG.removeChild(trail);
+    })();
   }
 
   var frame=0;
@@ -374,6 +414,8 @@
       dustE[dk].setAttribute("cx",dust[dk].x.toFixed(1));
       dustE[dk].setAttribute("cy",dust[dk].y.toFixed(1));
     }
+
+    if(frame>0&&frame%160===0&&Math.random()<0.7)spawnComet();
 
     frame++;
     requestAnimationFrame(step);
