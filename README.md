@@ -21,6 +21,8 @@
   ·
   <a href="#spectra">≡ SPECTRA</a>
   ·
+  <a href="#pulse--live">⚡ PULSE</a>
+  ·
   <a href="#constellation">✦ CONSTELLATION</a>
   ·
   <a href="#mathematical-notes">✎ NOTES</a>
@@ -223,6 +225,70 @@ I build deliberate software: systems that stay clear under pressure, beautiful i
 <p align="center">
   <sub>≡ Source mass by language · refreshed nightly, no keys required</sub>
 </p>
+
+## Pulse · Live
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=13&duration=3000&pause=800&color=E8B95C&center=true&vCenter=true&width=600&lines=agentic+systems+%E2%80%A2+mathematics+%E2%80%A2+controlled+chaos;transmitting+from+the+event+horizon;real-time+signal+%E2%80%94+auto+refreshed+every+6h" alt="Typing animation" />
+</p>
+
+<!-- ABHISHEKNAIIDU-STYLE DYNAMIC BLOCKS — real-time, auto-updated via GitHub Actions (no deletion of obsidian engine) -->
+
+### 📊 This week — WakaTime
+
+<!--START_SECTION:waka-->
+
+```txt
+No activity tracked yet — connect WakaTime to enable (see setup below)
+```
+
+<!--END_SECTION:waka-->
+
+<p align="center">
+  <sub>▤ WakaTime · updates daily via <code>anmol098/waka-readme-stats</code> · needs <code>WAKA_API_KEY</code> secret</sub>
+</p>
+
+### 📈 GitHub Stats — real time
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=jarlelauch&show_icons=true&theme=transparent&bg_color=07070e&title_color=e8b95c&text_color=e9e4d9&icon_color=d3932c&border_color=1a1a2e&hide_border=false&include_all_commits=true" alt="jarlelauch stats" height="160" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jarlelauch&layout=compact&theme=transparent&bg_color=07070e&title_color=e8b95c&text_color=e9e4d9&border_color=1a1a2e&hide_border=false&langs_count=6" alt="top langs" height="160" />
+</p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=jarlelauch&theme=dark&background=07070e&ring=e8b95c&fire=d3932c&currStreakNum=e9e4d9&sideNums=e9e4d9&currStreakLabel=e8b95c&sideLabels=e9e4d9&dates=8a8a9a&border=1a1a2e" alt="streak" width="100%" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=jarlelauch&bg_color=07070e&color=e9e4d9&line=d3932c&point=c0487e&area=true&hide_border=true" alt="activity graph" width="100%" />
+</p>
+
+<p align="center">
+  <sub>📈 Live via <code>github-readme-stats</code> + <code>streak-stats</code> + <code>activity-graph</code> — no token needed, refreshes on every page load</sub>
+</p>
+
+### 🚧 Todoist — task pulse (optional)
+
+<!-- TODO-IST:START -->
+🏆 0 Karma Points · 🌸 0 today · ✅ 0 completed · ⏳ 0 day streak
+<!-- TODO-IST:END -->
+
+<p align="center">
+  <sub>🚧 Todoist · updates via <code>abhisheknaiidu/todoist-readme</code> · needs <code>TODOIST_API_KEY</code> secret — delete this block if not using Todoist</sub>
+</p>
+
+### 👁️ Profile Views — real time
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=jarlelauch&label=PROFILE+VIEWS&color=d3932c&style=for-the-badge&labelColor=07070e" alt="profile views" />
+  <img src="https://img.shields.io/github/followers/jarlelauch?style=for-the-badge&labelColor=07070e&color=c0487e&logo=github" alt="followers live" />
+</p>
+
+<p align="center">
+  <sub>⚡ PULSE · real-time mirrors — complementary to ▤ READINGS + ≡ SPECTRA (nightly Actions). This block updates live on every render, no extra Action needed.</sub>
+</p>
+
+---
 
 ## Mathematical Notes
 
